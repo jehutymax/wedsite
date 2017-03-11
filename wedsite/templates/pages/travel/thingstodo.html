@@ -1,0 +1,52 @@
+{% load staticfiles i18n %}
+<section id="todo" class="module pb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt">{% trans "Things to check out in Philly" %}</h2>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+    <!-- Portfolio list start -->
+    <ul id="works-grid" class="works-grid works-grid-gut works-grid-3 works-hover-w">
+        <!-- Portfolio item start -->
+        <li class="work-item illustration webdesign">
+            <a href="http://www.philamuseum.org" target="_blank">
+                <div class="work-image">
+                    <img src="{% static 'images/travel/museum.jpg' %}" alt="">
+                </div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title">{% trans "Philadelphia Museum of Art" %}</h3>
+                </div>
+            </a>
+        </li>
+        <!-- Portfolio item end -->
+        <!-- Portfolio item start -->
+        <li class="work-item marketing photography">
+            <a href="http://www.schuylkillbanks.org" target="_blank">
+                <div class="work-image">
+                    <img src="{% static 'images/travel/banks.jpg' %}" alt="">
+                </div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title">{% trans "Schuylkill Banks" %}</h3>
+                </div>
+            </a>
+        </li>
+        <!-- Portfolio item end -->
+        <!-- Portfolio item start -->
+        <li class="work-item illustration photography">
+            <a href="http://www.phillyitalianmarket.com" target="_blank">
+                <div class="work-image">
+                    <img src="{% static 'images/travel/italian_market.jpg' %}" alt="">
+                </div>
+                <div class="work-caption font-alt">
+                    <h3 class="work-title">{% trans "9th Street Italian Market" %}</h3>
+                </div>
+            </a>
+        </li>
+        <!-- Portfolio item end -->
+    </ul>
+    <!-- Portfolio list end -->
+</section>

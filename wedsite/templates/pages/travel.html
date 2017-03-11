@@ -1,0 +1,383 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block content %}
+<!-- Wrapper start -->
+<div class="main">
+    <!-- Header section start -->
+    <section class="module bg-dark bg-dark-30" data-background="{% static 'images/ElisabethandRafael_022.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h1 class="module-title font-alt mb-0">{% trans "Travel Plans" %}</h1>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Header section end -->
+    <!-- Components start -->
+    <section class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul id="filters" class="filter font-alt hidden-xs">
+                        <li><a href="#transit" class="current wow fadeInUp section-scroll">{% trans "Transit" %}</a></li>
+                        <li><a href="#accommodations" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">{% trans "Accomodations" %}</a></li>
+                        <li><a href="#visa" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">{% trans "U.S. Visa" %}</a></li>
+                        <li><a href="#dining" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">{% trans "Dining" %}</a></li>
+                        <li><a href="#todo" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">{% trans "Things to do" %}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div id="transit" class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">{% trans "Getting to Philly!" %}</h2>
+                    <div class="module-subtitle font-serif">
+                      {% trans "Travel plans and suggested accomodations!" %}
+                    </div>
+                </div>
+            </div>
+            <!-- Content column start -->
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h4 class="font-alt mb-0">{% trans "No, really, how do I get there?" %}</h4>
+                    <hr class="divider-w mt-10 mb-20">
+                    <div role="tabpanel">
+                        <!-- Nav tabs start-->
+                        <ul class="nav nav-tabs font-alt" role="tablist">
+                            <li class="active">
+                                <a href="#plane" data-toggle="tab"><i class="fa fa-plane"></i></span> {% trans "By Plane" %}</a>
+                            </li>
+                            <li>
+                                <a href="#car" data-toggle="tab"><i class="fa fa-car"></i></span> {% trans "By Car" %}</a>
+                            </li>
+                            <li>
+                                <a href="#bus" data-toggle="tab"><i class="fa fa-road"></i></span> {% trans "By Bus" %} </a>
+                            </li>
+                        </ul>
+                        <!-- Nav tabs end -->
+                        <!-- Tab panes start-->
+                        <div class="tab-content">
+                            <!-- Tab start -->
+                            <div class="tab-pane active" id="plane">
+                                <p> {% trans "Two airports work: Philadelphia's is by far the easiest, but you can also get a train from Newark." %}
+                                    <div class="row multi-columns-row">
+                                        <!-- Features start -->
+                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                            <div class="features-item">
+                                                <div class="features-icon">
+                                                    <i class="fa fa-plane"></i>
+                                                    <h4 class="font-alt">PHL</h4>
+                                                </div>
+                                                <h3 class="features-title font-alt">Philadelphia International Airport </h3> 8000 Essington Ave
+                                                <br> {% trans "Philadelphia" %}, PA
+                                                <br>
+                                                <a href="phl.org" target="_blank">phl.org</a>
+                                                <br>
+                                                <br>
+                                                <a href="https://www.google.com/flights/#search;f=;t=PHL;d=2016-06-23;r=2016-06-26;mc=m" target="_blank" class="btn btn-border-d btn-round"><i class="fa fa-map-marker"></i> {% trans "Search for Flights" %}</a>
+                                            </div>
+                                        </div>
+                                        <!-- Features end -->
+                                        <!-- Features start -->
+                                        <div class="col-sm-6 col-md-6 col-lg-6">
+                                            <div class="features-item">
+                                                <div class="features-icon">
+                                                    <i class="fa fa-plane"></i>
+                                                    <h4 class="font-alt">EWR</h4>
+                                                </div>
+                                                <h3 class="features-title font-alt">Newark Liberty International Airport</h3> 3 Brewster Rd
+                                                <br> Newark, NJ
+                                                <br>
+                                                <a href="panynj.gov" target="_blank">panynj.gov</a>
+                                                <br>
+                                                <br>
+                                                <a href="https://www.google.com/flights/#search;f=;t=EWR;d=2016-06-23;r=2016-06-26;mc=m" target="_blank" class="btn btn-border-d btn-round"><i class="fa fa-map-marker"></i> {% trans "Search for Flights" %} </a>
+                                            </div>
+                                        </div>
+                                        <!-- Features end -->
+                                    </div>
+                                    <!-- .row -->
+                            </div>
+                            <!-- Tab end -->
+                            <!-- Tab start -->
+                            <div class="tab-pane" id="car">
+                               {% trans " By car, the city is just two hours from New York City, 90 minutes from Baltimore, three hours from Washington D.C. and about an hour from Lancaster County, Atlantic City and the New Jersey shore via major highways." %}
+                                <br>
+                                <br> {% trans "Philadelphia is served by the PA Turnpike (I-276), I-76, I-476, I-95, US-1 and the New Jersey Turnpike." %}
+                                <br>
+                                <br> {% trans "If that doesn't mean much, head over to Google Maps!" %}
+                                <br>
+                                <br>
+                                <a href="https://goo.gl/maps/F7pEI" target="_blank" class="btn btn-border-d btn-round"><i class="fa fa-map-marker"></i> {% trans "Directions in Google Maps" %}</a>
+                            </div>
+                            <!-- Tab end -->
+                            <!-- Tab start -->
+                            <div class="tab-pane" id="bus">
+                                <p> {% trans "You might consider carpooling with someone." %}
+                                    <br>{% trans "Reach out to us if you need help with that!" %}</p>
+                                <p> {% trans "If you're set on taking the bus, the following companies serve Philadelphia." %} </p>
+                                <div class="row">
+                                    <!-- Owl-carousel start -->
+                                    <div class="owl-carousel text-center" data-items="5" data-pagination="true" data-navigation="false">
+                                        <div class="owl-item">
+                                            <!-- Client logo start -->
+                                            <div class="col-sm-12">
+                                                <div class="client-logo">
+                                                <a target="_blank" href="https://www.greyhound.com/">    <img src="{% static 'images/logo/greyhound.jpg' %}" alt=""> </a>
+                                                </div>
+                                            </div>
+                                            <!--  Client logo end -->
+                                        </div>
+                                        <div class="owl-item">
+                                            <!-- Client logo start -->
+                                            <div class="col-sm-12">
+                                                <div class="client-logo">
+                                                   <a target="_blank" href="http://megabus.com/"> <img src="{% static 'images/logo/megabus.jpg' %}" alt=""> </a>
+                                                </div>
+                                            </div>
+                                            <!--  Client logo end -->
+                                        </div>
+                                        <div class="owl-item">
+                                            <!-- Client logo start -->
+                                            <div class="col-sm-12">
+                                                <div class="client-logo">
+                                                  <a target="_blank" href="https://www.boltbus.com/">  <img src="{% static 'images/logo/boltbus.jpg' %}" alt=""> </a>
+                                                </div>
+                                            </div>
+                                            <!--  Client logo end -->
+                                        </div>
+                                    </div>
+                                    <!-- Owl-carousel end -->
+                                </div>
+                                <!-- .row -->
+                            </div>
+                            <!-- Tab end -->
+                        </div>
+                        <!-- Tab panes end-->
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h4 class="font-alt mb-0">{% trans "And getting around" %}</h4>
+                    <hr class="divider-w mt-10 mb-20">
+                    <div class="row multi-columns-row">
+                        <!-- Features start -->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                <a href="https://www.lyft.com/invited/ELANDRAF" target="_blank">
+                                   <img width="20%" src="{% static 'images/logo/lyft_logo.png' %}" alt=""> </a>
+                                </div>
+                                <a href="https://www.lyft.com/invited/ELANDRAF" target="_blank">
+                                <h3 class="features-title font-alt">{% trans "$20 off with code ELANDRAF" %} </h3></a> {% trans "We like Lyft and use it a lot to get around the city. If you haven't used it before, here's a discount to help you get around during our wedding weekend: $20 in Lyft credit towards your first ride!" %}
+                            </div>
+                        </div>
+                        <!-- Features end -->
+                        <!-- Features start -->
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <div class="features-item">
+                                <div class="features-icon">
+                                <a href="https://get.uber.com" target="_blank">
+                                   <img width="20%" src="{% static 'images/logo/uber-logo.png' %}" alt="">
+                                </div>
+                                <h3 class="features-title font-alt">{% trans "Uber wedding discount" %}: ELANDRAF</h3> </a> {% trans "We use Uber too, but Lyft seems to be cheaper. So here's a discount to try Uber as well! For a free first ride up to $20, sign up with the code ELANDRAF." %}
+                            </div>
+                        </div>
+                        <!-- Features end -->
+                    </div>
+                </div>
+    </section>
+    <!-- Components start -->
+    <hr class="divider-w">
+
+    <section id="accommodations" class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">{% trans "Accommodations" %}</h2>
+                    <div class="module-subtitle font-serif">
+                        {% trans "We have group rates available at the Best Western Independence Park Hotel. And there's always Airbnb." %}
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <h4 class="font-alt mb-0">Best Western Independence Park Hotel</h4>
+            <hr class="divider-w mt-10 mb-20">
+            <div class="row multi-columns-row">
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>
+                        <img src="{% static 'images/travel/hotel_flag.jpg' %}" alt="">
+                    </p>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <p>
+                        <img src="{% static 'images/travel/hotel_front.jpg' %}" alt="">
+                    </p>
+                </div>
+                <!-- Content box start -->
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="content-box">
+                        <div class="content-box-image">
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <h3 class="content-box-title font-serif">{% trans "Reservations" %}</h3> {% trans "By phone:" %} {% trans "(215) 922-4443" %}
+                        <br> {% trans "By email" %}: <a href="mailto:stay@independenceparkinn.com">stay@independenceparkinn.com</a>
+                        <br> {% trans "Be sure to mention you're part of the" %}
+                        <br> <strong>{% trans "STENGER/CAMPOS Wedding" %}</strong> {% trans "group" %}.
+                        <br>
+                        <br>
+                        <a href="http://book.bestwestern.com/bestwestern/groupSearch.do?groupId=1N4JU6I6" class="btn btn-d btn-round">{% trans "Book online" %}</a>
+                        <br>
+                        <br>
+                        <br>
+                        <i class="fa fa-map-marker"> </i>
+                        <br>
+                        <a href="https://goo.gl/maps/Nl5Fb" target="_blank">235 Chestnut Street <br>
+									{% trans "Philadelphia, Pennsylvania" %}, 19106, US</a>
+                        <br>
+                    </div>
+                </div>
+                <!-- Content box start -->
+            </div>
+            <!-- .row -->
+            <!-- Pricing start -->
+            <div class="row multi-columns-row">
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="price-table font-alt">
+                        <h4>Deluxe Queen</h4>
+                        <div class="borderline"></div>
+                        <p class="price"><span>$</span>209</p>
+                        <ul class="price-details">
+                            <li>{% trans "1 Queen Bed" %}</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="price-table font-alt">
+                        <h4>Superior King</h4>
+                        <div class="borderline"></div>
+                        <p class="price"><span>$</span>229</p>
+                        <ul class="price-details">
+                            <li>{% trans "1 King Bed" %}</li>
+                            <li> {% trans "Microwave" %} </li>
+                        </ul>
+                    </div>
+                    <br>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="price-table best font-alt">
+                        <h4>{% trans "Two-Bedded" %}</h4>
+                        <p class="small">{% trans "Ideal to share" %}</p>
+                        <div class="borderline"></div>
+                        <p class="price"><span>$</span>249</p>
+                        <ul class="price-details">
+                            <li>2 {% trans "Queen Beds" %}</li>
+                            <li> {% trans "Microwave" %} </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-offset-3 align-center">
+                    <p>{% trans "All rooms include Full Breakfast, TV and Internet and a Refrigerator." %}</p>
+                </div>
+            </div>
+            <!-- .row -->
+            <h4 class="font-alt mb-0">{% trans "Other options" %}</h4>
+            <hr class="divider-w mt-10 mb-20">
+            <div class="row multi-columns-row post-columns">
+                <!-- Post item start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="post mb-20">
+                        <div class="post-thumbnail">
+                            <a href="https://goo.gl/3bK738" target="_blank"><img src="{% static 'images/travel/philly_alley.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="https://goo.gl/3bK738" target="_blank">HOTELS COMBINED</a></h2>
+                        </div>
+                        <div class="post-entry">
+                            <p>{% trans "HC shows the most options, so it's a good comparison tool. Playing around with the filters usually yield better deals." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post item end -->
+                <!-- Post item start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="post mb-20">
+                        <div class="post-thumbnail">
+                            <a href="https://goo.gl/MrWDeC"><img src="{% static 'images/travel/philly_parkway.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="post-header font-alt">
+                            <h2 class="post-title"><a href="https://goo.gl/MrWDeC">AIRBNB</a></h2>
+                        </div>
+                        <div class="post-entry">
+                            <p>{% trans "We like Airbnb, and have used it a few times ourselves. We really think you end up getting better locations at a much lower cost." %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post item end -->
+                <!-- Post item start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="post mb-20">
+                        <div class="post-thumbnail">
+                            <a href="https://goo.gl/uF57H1" target="_blank"><img src="{% static 'images/travel/philly_love.jpg' %}" alt=""></a>
+                        </div>
+                        <div class="post-header font-alt">
+                            <h2 class="post-title" <a href="https://goo.gl/uF57H1" target="_blank">KAYAK</a></h2>
+                        </div>
+                        <div class="post-entry">
+                            <p>{% trans "A more traditional hotel comparison tool, for when HC just isn't cutting it!" %}</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post item end -->
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Latest blog posts end -->
+    <!-- Subscribe start -->
+    <section id="visa" class="module-small bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 col-lg-offset-2">
+                    <div class="callout-text font-alt">
+                        <h3 class="callout-title">{% trans "Do you need an invitation letter for a US visa?" %}</h3> 
+                    </div>
+                </div>
+                 <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="callout-btn-box callout-text font-alt">
+                   {% trans " Let us know when you're RSVP'ing and we'll get you one as soon as possible." %}
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>                    
+    <!-- Video start -->
+    <section class="module module-video bg-dark-30" data-background="{% static 'images/philly.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="module-title font-alt mb-0">{% trans "You'll love Philly as much as we do!" %}</h2>
+                </div>
+            </div>
+        </div>
+        <!-- .container -->
+        <!-- Youtube player start-->
+        <div class="video-player" data-property="{videoURL:'https://www.youtube.com/watch?v=NNeGDWs6pfY', containment:'.module-video', startAt:4, stopAt:86, mute:true, autoPlay:true, loop:true, opacity:1, showControls:false, showYTLogo:false, vol:0}"></div>
+        <!-- Youtube player end -->
+    </section>
+    <!-- Video end -->
+
+    {% include 'pages/travel/dining.html' %}
+        <!-- Divider -->
+    <hr class="divider-w">
+    <!-- Divider -->
+    {% include 'pages/travel/thingstodo.html' %}
+
+    <!-- Divider -->
+    <hr class="divider-d">
+    <!-- Divider -->
+    </div>
+    {% endblock content %}

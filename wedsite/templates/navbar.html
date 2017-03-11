@@ -1,0 +1,57 @@
+{% load staticfiles i18n %}
+<!-- Language selection -->
+<span style="visibility: hidden;">
+    <form id="en-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                <input name="language" type="hidden" value="en" />
+    </form>
+    <form id="pt-form" action="{% url 'set_language' %}" method="post">{% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+            <input name="language" type="hidden" value="br" />   
+    </form>
+</span>
+<!-- Navigation start -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{% url 'home' %}">
+        {% trans "El" %} 
+        <i class="fa fa-fw"> &#xf004; </i> {% trans "Raf" %} </a>
+        <div class="navbar-right font-alt" style="position:relative; top: 4px;"> <h4>{% trans "June 25, 2016" %}</h4></div>
+        </div>
+        <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'story' %}" class="section-scroll">{% trans "Our Story" %}</a></li>
+                <li><a href="{% url 'event' %}" class="section-scroll">{% trans "The Events" %}</a></li>
+                <li><a href="{% url 'travel' %}" class="section-scroll">{% trans "Travel Plans" %}</a></li>
+                <li><a href="{% url 'registry' %}" class="section-scroll">{% trans "Registry" %}</a></li>
+                <li><a href="{% url 'rsvp' %}" class="section-scroll">{% trans "RSVP" %}</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        {% get_current_language as LANGUAGE_CODE %}
+                        {% if LANGUAGE_CODE == 'en' %} 
+                            <img src="{% static 'images/US.png' %}"/>
+                        {% else %}
+                            <img src="{% static 'images/BR.png' %}"/>
+                        {% endif %}
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li>
+                            <a href="javascript:void(0);" onclick="document.getElementById('en-form').submit();"><img src="{% static 'images/US.png' %}" /> English </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0);" onclick="document.getElementById('pt-form').submit();"><img src="{% static 'images/BR.png' %}" /> Português</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navigation end -->

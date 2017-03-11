@@ -1,0 +1,137 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block additional_scripts %}
+<script type="text/javascript" src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="//cdn.rawgit.com/nnattawat/flip/v1.0.16/dist/jquery.flip.min.js"></script>
+<script type="text/javascript">
+$(function() {
+    $('.clock').countdown({
+        date: "June 25, 2016",
+        render: function(data) {
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>{% trans "days" %}</span></div>");
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+    $('#code_form').find('input,textarea').jqBootstrapValidation();
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+    $("#card").flip({
+        trigger: 'manual'
+    });
+
+    $('#flipper').click(function() {
+        $("#card").flip(true);
+    });
+});
+</script>
+{% endblock additional_scripts %} {% block content %}
+<section class="module bg-dark bg-dark-60 home-full-height" data-background="{% static 'images/ElisabethandRafael_022.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt mb-0">{% trans "RSVP" %}</h1>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+        </div>
+    </div>
+</section>
+<section class="module bg-dark-90 pt-0 pb-0" data-background="{% static 'images/physick_house_inside.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div id="transit" class="col-sm-6 col-sm-offset-3">
+                <h2 class="module-title font-alt"></h2>
+                <div class="module-subtitle font-serif">
+                  {% trans "  You should have received a Wedding Code with your invitation. If you've lost it or didn't receive it, let us know by giving us your name and email below." %}
+                    <br> {% trans "Thanks!" %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="module-icon">
+                    <img width="48x" src="{% static 'images/rsvp/wedding-icons_computer.svg' %}" />
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <strong>{% trans "Request a Wedding Code to RSVP" %}</strong>
+                    </div>
+                    {{ form.non_field_errors }}
+                    <div class="panel-body">
+                        <form id="code_form" action="{% url 'rsvp_request' %}" method="post" class="form-horizontal" role="form" novalidate="">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="{{ form.name.id_for_label }}" class="sr-only" for="cname">Name</label>
+                                <div class="col-sm-12">
+                                    {{ form.name }}
+                                    <p class="help-block text-danger">{{ form.name.errors }}</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="{{ form.email.id_for_label }}" class="sr-only" for="cemail">Your Email</label>
+                                <div class="col-sm-12">
+                                    {{ form.email }}
+                                    <p class="help-block text-danger"></p>
+                                    <p class="font-alt">{{ form.email.errors }}</p>
+                                </div>
+                            </div>
+                            <div class="form-group last">
+                                <div class="text-center col-sm-12">
+                                    <button type="submit" class="btn btn-primary btn-block btn-round btn-sm">
+                                        {% trans "Send Request" %}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <a href="{% url 'rsvp' %}">
+                        <div class="text-center panel-footer">
+                            <button class="btn btn-block btn-round btn-d">{% trans "Already have a Wedding Code?" %}</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="back">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <blockquote class="testimonial-text font-alt">{% trans "We are so excited to see everyone at the wedding." %}
+                    <br>{% trans " Let us know if you have any problems RSVP'ing." %} </blockquote>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="testimonial-author">
+                    <div class="testimonial-caption font-alt">
+                        <div class="testimonial-title">
+                            <div class="clock"></div>
+                        </div>
+                        <div class="testimonial-descr">Elisabeth &amp; Rafael</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+</section>
+<!-- Testimonials end -->
+{% endblock content %}

@@ -1,0 +1,207 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block additional_scripts %}
+<script type="text/javascript" src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/s/bs/dt-1.10.10,r-2.0.0/datatables.min.js"></script>
+<script src="{% static 'js/bootstrap-switch.min.js' %}"></script>
+<script type="text/javascript">
+$(function() {
+    $('.clock').countdown({
+        date: "June 25, 2016",
+        render: function(data) {
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>days</span></div>");
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('table.display').DataTable();
+});
+</script>
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> {% endblock additional_scripts %} {% block content %}
+<section class="module bg-dark bg-dark-60" data-background="{% static 'images/ElisabethandRafael_022.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt mb-0">RSVP</h1>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+</section>
+<section class="module bg-dark-90 pt-0 pb-0" data-background="{% static 'images/physick_house_inside.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="module-icon">
+                    <img width="48x" src="{% static 'images/rsvp/wedding-icons_computer.svg' %}" />
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <strong>RSVP - Admin</strong>
+                    </div>
+                    {{ form.non_field_errors }}
+                    <div class="panel-body text-muted">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <ol class="breadcrumb">
+                                    <li><strong>RSVP Admin</strong></li>
+                                </ol>
+                            </div>
+                            <div class="row">
+                                <h4 class="font-alt mb-0 text-center text-muted">
+                                <!-- Invited Family's Name -->
+                                {{ user.username }}
+                                </h4>
+                                <hr class="divider-w mt-10 mb-20">
+                            </div>
+                        </div>
+                        <!-- Features start -->
+                        <div class="col-sm-8 col-md-offset-2">
+                            <h1 class="text-center fancy-text">Wedding</h1>
+                            <h5 class="text-center font-alt text-muted">Going: {{ stats.wed_going }} ~ Not Going: {{ stats.wed_notgoing }} </h5>
+                        </div>
+                        <div class="row">
+                            {% csrf_token %}
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <table id="wed_table" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Invited Family</th>
+                                            <th>Guest Name</th>
+                                            <th>Accepted?</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for wedrow in wedding %}
+                                        <tr>
+                                            {% for row in wedrow %}
+                                            <td>{{ row }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <br>
+                            </div>
+                        <!-- Features start -->
+                        <div class="col-sm-8 col-md-offset-2">
+                            <h1 class="text-center fancy-text">Rehearsal Dinner</h1>
+                            <h5 class="text-center font-alt text-muted">Going: {{ stats.dinner_going }} ~ Not Going: {{ stats.dinner_notgoing }} </h5>
+                        </div>
+                        <div class="row text-muted">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <table id="wed_table" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Invited Family</th>
+                                            <th>Guest Name</th>
+                                            <th>Accepted?</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for wedrow in dinner %}
+                                        <tr>
+                                            {% for row in wedrow %}
+                                            <td>{{ row }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Features end -->
+                        <br>
+                           <!-- Features start -->
+                        <div class="col-sm-8 col-md-offset-2">
+                            <h1 class="text-center fancy-text">Interest in other events</h1>
+                        </div>
+                        <div class="row text-muted">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <table id="wed_table" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Event Name</th>
+                                            <th>Total Confirmations</th>
+                                            <th>Weighted Confirmations</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for r in interest %}
+                                        <tr>
+                                            {% for row in r %}
+                                            <td>{{ row }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                           <br>
+                        <!-- Features start -->
+                        <div class="col-sm-8 col-md-offset-2">
+                            <h1 class="text-center fancy-text">The Others</h1>
+                            <h5 class="text-center font-alt text-muted">Never accessed: {{ stats.never }} </h5>
+                        </div>
+                        <div class="row text-muted">
+                            <div class="col-sm-10 col-sm-offset-1">
+                                <table id="wed_table" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>Guest Name</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        {% for r in never %}
+                                        <tr>
+                                            {% for row in r %}
+                                            <td>{{ row }}</td>
+                                            {% endfor %}
+                                        </tr>
+                                        {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="back">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <blockquote class="testimonial-text font-alt">We are so excited to see everyone at the wedding.
+                    <br> Let us know if you have any problems RSVP'ing. </blockquote>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="testimonial-author">
+                    <div class="testimonial-caption font-alt">
+                        <div class="testimonial-title">
+                            <div class="clock"></div>
+                        </div>
+                        <div class="testimonial-descr">Elisabeth &amp; Rafael</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+</section>
+<!-- Testimonials end -->
+{% endblock content %}

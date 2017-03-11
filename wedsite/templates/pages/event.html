@@ -1,0 +1,473 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block additional_scripts %}
+<!-- AddThisEvent -->
+<script type="text/javascript" src="https://addthisevent.com/libs/1.6.0/ate.min.js"></script>
+{% endblock additional_scripts %} {% block content %}
+<!-- Wrapper start -->
+<div class="main">
+    <!-- Header section start -->
+    <section class="module bg-dark bg-dark-60" data-background="{% static 'images/ElisabethandRafael_006.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h1 class="module-title font-alt">
+                    {% trans "The Events" %}</h1>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Header section end -->
+    <!-- About start -->
+    <section class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <ul id="filters" class="filter font-alt hidden-xs">
+                        <li><a href="#wedding" class="current wow fadeInUp section-scroll">{% trans "The Wedding" %}</a></li>
+                        <li><a href="#afterparty" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">{% trans "Wedding After Party" %}</a></li>
+                        <li><a href="#picnic" class="wow fadeInUp section-scroll" data-wow-delay="0.2s">Breakfast Picnic</a></li>
+                    </ul>
+                    <div class="module-subtitle font-serif">
+                        "{% trans "It's a known fact that" %} <strong> {% trans "lobsters fall in love" %}</strong> {% trans "and mate for life." %}
+                        <br>{% trans "You can actually see old lobster couples walkin' around their tank, holding claws."%}"
+                        <p class="font-alt"> - Phoebe Buffay </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="wedding" class="module bg-dark-60" data-background="{% static 'images/event/physick_house_garden.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="module-title font-alt">{% trans "The Wedding" %}</h2>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <section class="module">
+        <div class="container">
+            <!-- Content column start -->
+            <div class="row multi-columns-row post-columns">
+                <div class="col-md-12">
+                    <div class="post">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h4 class="text-center font-alt">
+                                {% trans "Program" %}</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="menu">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h4 class="menu-title font-alt">
+                                    <img width="16px" src="{% static 'images/event/wedding-icons_rings.svg' %}" />
+                                    {% trans "Ceremony" %}</h4>
+                                </div>
+                                <div class="col-sm-4 menu-price-detail">
+                                    <h4 class="menu-price font-alt">05:00
+                                    PM</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h4 class="menu-title font-alt">
+                                    <img width="16px" src="{% static 'images/event/wedding-icons_glasses.svg' %}" />    
+                                    {% trans "Cocktail Hour" %}</h4>
+                                </div>
+                                <div class="col-sm-4 menu-price-detail">
+                                    <h4 class="menu-price font-alt">05:30
+                                    PM</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="menu">
+                            <div class="row">
+                                <div class="col-sm-8">
+                                    <h4 class="menu-title font-alt">
+                                    <img width="16px" src="{% static 'images/event/wedding-icons_cake.svg' %}" />
+                                    {% trans "Dinner &amp; Reception" %}</h4>
+                                </div>
+                                <div class="col-sm-4 menu-price-detail">
+                                    <h4 class="menu-price font-alt">06:30
+                                    PM</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Post item end -->
+                <!-- Post item start -->
+            </div>
+            <!-- .row -->
+            <div class="row multi-columns-row">
+                <!-- Features start -->
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <span class="icon-calendar"></span>
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "When" %}</h3>
+                        <h5 class="font-alt">{% trans "June 25, 2016" %}<br/>
+                            5:00 PM <br/> </h5>
+                        <br>
+                        <div class="addthisevent" title="Add to Calendar">
+                            {% trans "Add to Calendar" %} <span class="start">06/25/2016 05:00 PM</span>
+                            <span class="end">06/25/2016 10:00
+                                    PM</span> <span class="timezone">America/New_York</span>
+                            <span class="title">{% trans "Wedding Day!" %}</span> <span class="description">{% trans "Elisabeth and Rafael get married." %}</span> <span class="location">{%
+                                    trans "Physick House - Philadelphia, PA"
+                                    %}</span> <span class="organizer">Rafael
+                                    &amp; Elisabeth</span> <span class="organizer_email">rafaelcdn@gmail.com</span>
+                            <span class="all_day_event">true</span>
+                            <span class="date_format">{% trans
+                                    "MM/DD/YYYY" %}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <span class="icon-map"></span>
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "Where" %}</h3>
+                        <h5 class="font-alt">
+                                      <strong>Physick House</strong><br>
+                                      321 S 4th St<br>
+                                      {% trans "Philadelphia, PA" %} 19106<br> 
+                                     </h5>
+                        <a href="https://goo.gl/maps/TTVrM" target="_blank" class="btn btn-border-d btn-round"><i class="fa fa-map-marker"></i> {% trans "See in Google Maps" %}</a>
+                        <br>
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img width="48px" src="{% static 'images/event/grass.png' %}" />
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "Attire Tip" %}</h3>
+                        <p class="font-alt">
+                            <strong>{% trans "Outdoor Garden" %}</strong>
+                            <br> {% trans "Since this is an outdoor wedding," %}
+                            <br> {% trans "heels aren't recommended!" %} </p>
+                        <br>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-3 col-lg-3">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <span class="icon-puzzle"></span>
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "Babysitter" %}</h3>
+                        <p class="font-alt">
+                            <strong>{% trans "5:30 PM to 9:30 PM" %}</strong>
+                            <br> {% trans "We'll have Iris's sitter" %}
+                            <br> {% trans "watching the kids" %} <br> {% trans "at the Physick House." %} </p>
+                        <br>
+                    </div>
+                </div>
+                <!-- Features end -->
+            </div>
+        </div>
+    </section>
+    <hr class="divider-w">
+    <!-- Team start -->
+    <section class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">{% trans "The Wedding Party" %}</h2>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <!-- Team item star -->
+                <div class="col-sm-6 col-md-3 mb-sm-20 wow fadeInUp">
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="{% static 'images/event/gabby.jpg' %}" alt="">
+                            <div class="team-detail">
+                                <h5 class="font-alt">{% trans "The Best friend" %}</h5>
+                                <p class="font-serif">{% trans "Eight years of theater, traveling, city-living and drinking way too much beer!" %}</p>
+                                <div class="team-social">
+                                    <a href="https://www.facebook.com/gabrielle.santangelo1" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                            <div class="team-name">Gabrielle</div>
+                            <div class="team-role">{% trans "Bridesmaid" %}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team item end -->
+                <!-- Team item star -->
+                <div class="col-sm-6 col-md-3 mb-sm-20 wow fadeInUp">
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="{% static 'images/event/hannah.jpg' %}" alt="">
+                            <div class="team-detail">
+                                <h5 class="font-alt">{% trans "The Sister-Friend" %}</h5>
+                                <p class="font-serif">{% trans "From American Girl dolls, and playing in the dirt, to adulthood and aunthood." %} </p>
+                                <div class="team-social">
+                                    <a href="https://www.facebook.com/hannah.stenger" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                            <div class="team-name">Hannah</div>
+                            <div class="team-role">{% trans "Maid of Honor" %}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team item end -->
+                <!-- Team item star -->
+                <div class="col-sm-6 col-md-3 mb-sm-20 wow fadeInUp">
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="{% static 'images/event/rodrigo.jpg' %}" alt="">
+                            <div class="team-detail">
+                                <h5 class="font-alt">{% trans "The little brother" %}</h5>
+                                <p class="font-serif">{% trans "Raf's little brother will stand up to the occasion as his best man - what could go wrong?" %}</p>
+                                <div class="team-social">
+                                    <a href="https://www.facebook.com/rodrigo.campos.167" target="_blank"><i class="fa fa-facebook"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                            <div class="team-name">Rodrigo</div>
+                            <div class="team-role">{% trans "Best man" %}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team item end -->
+                <!-- Team item star -->
+                <div class="col-sm-6 col-md-3 mb-sm-20 wow fadeInUp">
+                    <div class="team-item">
+                        <div class="team-image">
+                            <img src="{% static 'images/event/leizer.jpg' %}" alt="">
+                            <div class="team-detail">
+                                <h5 class="font-alt">{% trans "The Real 'Work' Friend" %}</h5>
+                                <p class="font-serif">{% trans "Raf's friend from the same Drexel lab as him, who witnessed the Raf-Lis trajectory from the beginning." %}</p>
+                            </div>
+                        </div>
+                        <div class="team-descr font-alt">
+                            <div class="team-name">Leizer</div>
+                            <div class="team-role">{% trans "Groomsman" %}</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Team item end -->
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Team end -->
+    <hr class="divider-w"> {% include "pages/event/menu.html" %}
+    <hr class="divider-d">
+    <!-- Video start -->
+    <section id="afterparty" class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">Wedding After Party</h2>
+                    <div class="module-subtitle font-serif">
+                        {% trans "The party can't stop!" %}
+                        <br> {% trans "Follow us to 2nd Story Brewing immediately after the reception." %}
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row multi-columns-row">
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <i class="fa fa-beer" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="features-title font-alt">Beers brewed on site and late-night snacks</h3> {% trans "We have a few tables and high-tops reserved by the bar." %}
+                        <br> {% trans "Craft beer &amp; creative pub grub, including pizza &amp; charcuterie, in a bright, rustic-chic setting." %}
+                        <br>
+                        <br> {% trans "We hope to see you there. No RSVP is necessary!" %}
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <img src="{% static 'images/event/2ndstory.jpg' %}" />
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <i class="fa fa-calendar"> </i>
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "June 25, 2016" %} <br>9:45PM until the bar closes</h3>
+                        <div title="Add to Calendar" class="addthisevent">
+                            {% trans "Add to Calendar" %}
+                            <span class="start">06/25/2016 09:45 PM</span>
+                            <span class="end">06/26/2016 02:00 AM</span>
+                            <span class="timezone">America/New_York</span>
+                            <span class="title">After party at 2nd Story</span>
+                            <span class="description">{% trans "Join us for our wedding after party!" %}</span>
+                            <span class="location">2nd Story Brewing</span>
+                            <span class="organizer">Elisabeth &amp; Rafael</span>
+                            <span class="organizer_email">rafaelcdn@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <i class="fa fa-map-marker"> </i>
+                        </div>
+                        <h3 class="features-title font-alt">
+                                    <br> 
+                                    <a href="https://goo.gl/maps/bud7uKaGQSG2" target="_blank">2nd Story Brewing</a> <br>117 Chestnut St<br>
+                                    {% trans "Philadelphia, PA" %} 19106 <br> </h3>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <img src="{% static 'images/event/2ndstory2.jpg' %}" />
+                    </div>
+                </div>
+                <!-- Features end -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- Video end -->
+    <hr class="divider-d">
+    <!-- Features start -->
+    <section id="picnic" class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">Breakfast Picnic</h2>
+                    <div class="module-subtitle font-serif">
+                        {% trans "Soothe your hangover and join us for breakfast at Washington Square Park the morning after!" %}
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row multi-columns-row">
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <img src="{% static 'images/event/wsqpark.jpg' %}" />
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <img width="48px" src="{% static 'images/event/wedding-icons_cup.svg' %}" />
+                        </div>
+                        <h3 class="features-title font-alt">Picnic in the square</h3> {% trans "We're hosting a post-wedding breakfast picnic at one of our favorite spots in Philly - Washington Square Park." %}
+                        <br> {% trans "We'll have an assortment of our favorite pastries - Federal Donuts, DiBruno Bagels, and more." %}
+                        <br>
+                        <br> {% trans "We hope to see you there. No RSVP is necessary!" %}
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <img src="{% static 'images/event/wsqpark2.jpg' %}" />
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <i class="fa fa-calendar"> </i>
+                        </div>
+                        <h3 class="features-title font-alt">{% trans "June 26, 2016" %} <br> 10AM</h3>
+                        <div title="Add to Calendar" class="addthisevent">
+                            {% trans "Add to Calendar" %}
+                            <span class="start">06/26/2016 10:00 AM</span>
+                            <span class="end">06/26/2016 12:00 AM</span>
+                            <span class="timezone">America/New_York</span>
+                            <span class="title">Picnic at Washington Square Park</span>
+                            <span class="description">{% trans "Join us for our first breakfast the day after the wedding." %}<br>{% trans "We'll see everyone at Washington Square Park!" %}</span>
+                            <span class="location">Washington Square Park</span>
+                            <span class="organizer">Elisabeth &amp; Rafael</span>
+                            <span class="organizer_email">rafaelcdn@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <div class="features-item">
+                        <div class="features-icon">
+                            <i class="fa fa-map-marker"> </i>
+                        </div>
+                        <h3 class="features-title font-alt">
+                                    <br> 
+                                    <a href="https://goo.gl/maps/jT33BetMYH42" target="_blank">210 W Washington Square<br>
+                                    {% trans "Philadelphia, PA" %} 19106</a> <br> </h3>
+                    </div>
+                </div>
+                <!-- Features end -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- Features end -->
+    <!-- Video start -->
+    <section class="module bg-dark-60" data-background="{% static 'images/event/rit.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    &nbsp;
+                    <div class="video-box">
+                        <div class="video-box-icon">
+                            &nbsp;
+                        </div>
+                        <div class="video-title font-alt">
+                            &nbsp;
+                        </div>
+                        <div class="video-subtitle font-alt">
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Video end -->
+    <!-- Divider -->
+    <hr class="divider-w">
+    <!-- Divider -->
+    <!-- Divider -->
+    <hr class="divider-d">
+    <!-- Divider -->
+    <!-- Wrapper start -->
+</div>
+{% endblock content %}

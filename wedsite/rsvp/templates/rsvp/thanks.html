@@ -1,0 +1,148 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block additional_scripts %}
+<script type="text/javascript" src="{% static 'js/jquery.countdown.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-switch.min.js' %}"></script>
+<script type="text/javascript">
+$(function() {
+    $('.clock').countdown({
+        date: "June 25, 2016",
+        render: function(data) {
+            $(this.el).html("<div>" + this.leadingZeros(data.days, 3) + " <span>{% trans "days" %}</span></div>");
+        }
+    });
+});
+</script>
+<script type="text/javascript">
+$(function() {
+    $('#code_form').find('input,textarea').jqBootstrapValidation();
+    $('#code_form').find("input[type='checkbox']").bootstrapSwitch();
+});
+</script>
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> {% endblock additional_scripts %} {% block content %}
+<section class="module bg-dark bg-dark-60" data-background="{% static 'images/ElisabethandRafael_022.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="module-title font-alt mb-0">RSVP</h1>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+</section>
+<section class="module bg-dark-90 pt-0 pb-0" data-background="{% static 'images/physick_house_inside.jpg' %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="module-icon">
+                    <img width="48x" src="{% static 'images/rsvp/wedding-icons_computer.svg' %}" />
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <strong>RSVP</strong>
+                    </div>
+                    {{ form.non_field_errors }}
+                    <div class="panel-body">
+                        <div class="col-sm-12">
+                            <div class="row">
+                                <ol class="breadcrumb text-muted">
+                                    <li>{% trans "RSVP" %}</li>
+                                    <li class="text-muted"{% trans ">Who's in your party?" %}</li>
+                                    <li class="active"><strong>{% trans "Confirmation" %}</strong></li>
+                                </ol>
+                            </div>
+                            <div class="row">
+                                <h4 class="font-alt mb-0 text-center text-muted">
+                                <!-- Invited Family's Name -->
+                                {{ guest.name }}
+                                </h4>
+                                <hr class="divider-w mt-10 mb-20">
+                            </div>
+                        </div>
+                        <!-- Features start -->
+                        <div class="col-sm-8 col-md-offset-2">
+                            <h1 class="text-center fancy-text">{% trans "Thanks!" %} </h1>
+                            <h5 class="text-center font-alt text-muted">{% trans "Your RSVP has been received." %}</h5>
+                        </div>
+                                <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}" role="alert">{{ message }}</div>
+                {% endfor %}
+            </div>
+        </div>
+        {% if form %}
+                         <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h6 class="text-center text-muted">{% trans "Optionally, if there is anything you'd like to let us know about your RSVP, send us a message below." %}</h6>
+                            </div>
+                        </div>
+                        <!-- Features end -->
+                        <form id="comment_form" action="{% url 'rsvp_comment' %}" method="post" class="form-horizontal" role="form" novalidate="">
+                            {% csrf_token %}
+                            <div class="col-sm-8 col-md-offset-2">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        {% for field in form %}
+                                        <tr>
+                                            <th scope=row>
+                                                &nbsp;
+                                            </th>
+                                            <td class="font-alt text-muted">
+                                                {{ field.label_tag }}
+                                            </td>
+                                            <td>
+                                                &nbsp;
+                                            </td>
+                                            <td class="text-muted">
+                                                {{ field }}
+                                            </td>
+                                        </tr>
+                                     {% endfor %}
+                                    </tbody>
+                                </table>
+                                <br>
+                            </div>
+                            <br>
+                            <div class="form-group last">
+                                <div class="text-center col-sm-6 col-sm-offset-3">
+                                    <button type="submit" class="btn btn-info btn-block btn-round btn-sm">
+                                        {% trans "Send" %}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    {% endif %}
+                </div>
+                <div class="back">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                 <blockquote class="testimonial-text font-alt">{% trans "We are so excited to see everyone at the wedding." %}
+                                    <br> {% trans "Let us know if you have any problems RSVP'ing." %} </blockquote>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <div class="testimonial-author">
+                    <div class="testimonial-caption font-alt">
+                        <div class="testimonial-title">
+                            <div class="clock"></div>
+                        </div>
+                        <div class="testimonial-descr">Elisabeth &amp; Rafael</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+    <!-- .container -->
+</section>
+<!-- Testimonials end -->
+{% endblock content %}

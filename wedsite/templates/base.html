@@ -1,0 +1,177 @@
+{% load staticfiles i18n %}
+<!DOCTYPE html>
+<html lang="en" ng-app>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% block title %}Elisabeth &amp; Rafael{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elisabeth and Rafael Wedding Website - June 25, 2016 in Philadelphia, PA.">
+    <meta name="author" content="Rafael Campos">
+    <link rel="icon" href="{% static 'images/favicon.ico' %}">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block css %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Third-party css libraries go here -->
+    <link href="{% static 'css/bootstrap-switch.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/simpletextrotator.css' %}" rel="stylesheet">
+    <link href="{% url 'etlinefont' %}" rel="stylesheet">
+    <link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'css/flexslider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/owl.carousel.css' %}" rel="stylesheet">
+    <link href="{% static 'css/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- This file store project specific CSS -->
+    <!-- <link href="{% static 'css/project.css' %}" rel="stylesheet"> -->
+    {% endblock %} 
+    {% block angular %}
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    {% endblock %}
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    {% block analytics %}
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-66816913-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    {% endblock analytics %}
+    {% block thehead %}
+    {% endblock thehead %}
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="page-loader">
+        <div class="loader">Loading...</div>
+    </div>
+    <!-- Navigation here -->
+    {% include "navbar.html" %} {% block content %}
+    <p>Use this document as a way to quick start any new project.</p>
+    {% endblock content %}
+    <!-- Scroll-up -->
+    <div class="scroll-up">
+        <a class="fa fa-angle-double-up" href="#totop" style="font-style: italic"></a>
+    </div>
+    {% block modal %}{% endblock modal %} {% block footer %} {% include "footer.html" %} {% endblock footer %}
+    <!-- Le javascript
+================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {% block javascript %}
+    <!-- Latest JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Your stuff: Third-party javascript libraries go here -->
+    <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/jquery.simple-text-rotator.min.js' %}"></script>
+    <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+    <script src="//maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="{% static 'js/gmaps.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.js' %}"></script>
+    <script src="{% static 'js/jquery.flexslider-min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fitvids.js' %}"></script>
+    <script src="{% static 'js/smoothscroll.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <!-- place project specific Javascript in this file -->
+    <script src="{% static 'js/project.js' %}"></script>
+    {% endblock javascript %}
+    <script type="text/javascript">
+    (function($) {
+
+        $(document).ready(function() {
+
+            /* ---------------------------------------------- /*
+             * Contact form ajax
+             /* ---------------------------------------------- */
+            happy = false;
+            $('#contact-form').find('input,textarea').jqBootstrapValidation({
+                preventSubmit: true,
+                submitError: function($form, event, errors) {
+                    // additional error messages or events
+                },
+                submitSuccess: function($form, event) {
+                    event.preventDefault();
+
+                    var submit = $('#contact-form submit');
+                    var ajaxResponse = $('#contact-response');
+                    var captchaMessage = $('#captcha-message');
+
+                    var name = $("input#cname").val();
+                    var email = $("input#cemail").val();
+                    var message = $("textarea#cmessage").val();
+
+                    var check;
+
+                    if ($("#g-recaptcha-response").val()) {
+                        check = $.ajax({
+                            type: 'POST',
+                            url: '{% url "contact_test" %}',
+                            dataType: 'json',
+                            data: {
+                                csrfmiddlewaretoken: '{{ csrf_token }}',
+                                captchaResponse: $("#g-recaptcha-response").val(),
+                            },
+                            success: function(data) {
+                                $.ajax({
+                                    type: 'POST',
+                                    url: '{% url "contact" %}',
+                                    dataType: 'json',
+                                    data: {
+                                        csrfmiddlewaretoken: '{{ csrf_token }}',
+                                        name: name,
+                                        email: email,
+                                        message: message,
+                                    },
+                                    cache: false,
+                                    beforeSend: function(result) {
+                                        submit.empty();
+                                        submit.append('<i class="fa fa-cog fa-spin"></i> Wait...');
+                                    },
+                                    success: function(result) {
+                                        $form.fadeOut(500);
+                                        ajaxResponse.html(result.message);
+                                    }
+                                });
+                            },
+                            error: function(data) {
+                                captchaMessage.html("{% trans "Something looks wrong with the Captcha there." %}");
+                            }
+                        });
+                    } else {
+                        captchaMessage.html("{% trans "Are you sure the Captcha has been completed?" %}");
+                    }
+
+                }
+            });
+
+        });
+
+    })(jQuery);
+    </script>
+    {% block additional_scripts %} {% endblock additional_scripts %}
+</body>
+
+</html>

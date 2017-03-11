@@ -1,0 +1,109 @@
+{% extends "base.html" %} {% load staticfiles i18n %} {% block content %}
+<!-- Wrapper start -->
+<div class="main">
+    <!-- Header section start -->
+    <section class="module-small bg-dark bg-dark-60" data-background="{% static 'images/ElisabethandRafael_058.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-6">
+                    <h1 class="module-title font-alt">{% trans "Our Registry" %}</h1>
+                    <div class="module-subtitle font-serif mb-0">
+                        {% trans "Hey, you're too kind to have come to our Registry!" %}
+                        <br> {% trans "All we have to say is: don't fight that feeling! No, seriously, thanks!" %}
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Header section end -->
+    <!-- Gallery start -->
+    <section id="us-registry" class="module">
+        <div class="container">
+            <a class="zola-registry-embed" href="https://www.zola.com/registry/elisabethandrafael" data-registry-key="elisabethandrafael">Our Zola Wedding Registry</a>
+            <script>
+            ! function(e, t, n) {
+                var s, a = e.getElementsByTagName(t)[0];
+                e.getElementById(n) || (s = e.createElement(t), s.id = n, s.async = !0, s.src = "https://widget.zola.com/js/widget.js", a.parentNode.insertBefore(s, a))
+            }(document, "script", "zola-wjs");
+            </script>
+        </div>
+    </section>
+    <!-- Gallery end -->
+    <!-- Divider -->
+    <hr class="divider-d">
+    <!-- Divider -->
+    <!-- Callout start -->
+    <section id="brasil-notice" class="module-small bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-8 col-lg-6 col-lg-offset-2">
+                    <div class="callout-text font-alt" data-background="{% static 'images/brava-2.jpeg' %}">
+                        <h3 class="callout-title">{% trans "Friends &amp; family in Brasil" %}</h3> {% trans "We have a separate registry in Brasil, for our time there!" %}
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-2">
+                    <div class="callout-btn-box">
+                        <a href="#brasil-registry" class="section-scroll btn btn-w btn-round">{% trans "View Brazilian Registry" %}</a>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Callout end -->
+    <!-- Video start -->
+    <section id="brasil-registry" class="module module-video bg-dark-30" data-background="{% static 'images/brava-2.jpeg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title font-alt">{% trans "Wedding Registry for Brasil" %}</h2>
+                    <div class="module-subtitle font-serif">
+                        {% trans "We tried to make it a little easier by having our registry in more than one store - they both work. A registry in a physical store should be added soon too!" %}
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row multi-columns-row">
+                <!-- CountTo start -->
+                <div class="col-sm-6 col-md-3 col-lg-3 col-md-offset-3">
+                    <div class="count-item mb-sm-40">
+                        <a href="https://www.querodecasamento.com.br/lista-de-casamento/rafael-campos-elisabeth-stenger/" target="_blank">
+                            <div class="count-icon">
+                                <img src="{% static 'images/logo/magazineluiza.png' %}" />
+                            </div>
+                            <h3 class="font-alt">Magazine Luiza</h3>
+                    </div>
+                    </a>
+                </div>
+                <!-- CountTo end -->
+                <!-- 		<div class="col-sm-6 col-md-3 col-lg-3">
+						<div class="count-item mb-sm-40">
+							<div class="count-icon">
+								<img src="{% static 'images/logo/fastshop.png' %}"/>
+							</div>
+							<h3 class="font-alt">Fast Shop</h3>
+						</div>
+					</div> -->
+                <!-- CountTo start -->
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="count-item mb-sm-40">
+                        <a href="http://www.pontofrio.com.br/Site/ListaGerenciadaLandingPage.aspx?idListaCompra=480384" target="_blank">
+                            <div class="count-icon">
+                                <img src="{% static 'images/logo/pf.png' %}" />
+                            </div>
+                            <h3 class="font-alt">Ponto Frio</h3>
+                    </div>
+                    </a>
+                </div>
+                <!-- CountTo end -->
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <!-- Video end -->
+    <!-- Divider -->
+    <hr class="divider-d">
+    <!-- Divider -->
+</div>
+{% endblock content %}

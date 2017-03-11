@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load staticfiles i18n %}
+
+{% block content %}
+
+<section class=
+"home-section home-parallax home-fade home-full-height
+ bg-dark-30" id="home">
+    <div class="hero-slider">
+                                   
+        <ul class="slides">
+            <li class="bg-dark-60 bg-dark" style=
+            "background-image:url({% static 'images/ElisabethandRafael_064.jpg' %})">
+            {% include "intro_text.html" %}
+            </li>
+
+            <li class="bg-dark-60 bg-dark" style=
+            "background-image:url({% static 'images/ElisabethandRafael_106.jpg' %})">
+    		{% include "intro_text.html" %}
+            </li>
+
+            <li class="bg-dark-60 bg-dark" style=
+            "background-image:url({% static 'images/ElisabethandRafael_088.jpg' %})">
+            {% include "intro_text.html" %}
+            </li>
+        </ul>
+    </div>
+
+</section><!-- Home end -->
+{% endblock content %}
+
+{% block footer %}
+
+<div class="alerts">
+    <div id="myAlert" class="alert alert-danger fade">
+        <button type="button" class="close" data-dismiss="alert">×</button>
+        <strong><span aria-hidden="true" class="icon-alarmclock"></span> &nbsp;
+    {% trans "RSVP is now closed!" %}</strong> {% trans "If you need to change your response, please do so and also send us a message." %}<a href="{% url 'rsvp' %}">{% trans "Click here to RSVP now." %}</a>
+    </div>
+</div>
+
+
+{% endblock footer %}
+
+{% block additional_scripts %}
+<script>
+function showAlert() {
+    $("#myAlert").addClass("in");
+}
+
+window.setTimeout(function () {
+    showAlert();
+}, 1610);
+</script>
+
+{% endblock additional_scripts %}

@@ -1,0 +1,1407 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-06-01 17:54-0400\n"
+"PO-Revision-Date: 2015-12-21 19:46-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: br\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 1.8.6\n"
+
+#: config/settings/common.py:137
+msgid "English"
+msgstr "Inglês"
+
+#: config/settings/common.py:138
+msgid "Portuguese"
+msgstr "Português"
+
+#: wedsite/rsvp/forms.py:8 wedsite/rsvp/forms.py:13
+msgid "Your E-mail*"
+msgstr "Seu Email"
+
+#: wedsite/rsvp/forms.py:9
+msgid "Wedding Code*"
+msgstr "Código do Convite*"
+
+#: wedsite/rsvp/forms.py:12
+msgid "Name*"
+msgstr "Nome*"
+
+#: wedsite/rsvp/forms.py:16
+msgid "Comments"
+msgstr "Comentários"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:9
+#: wedsite/rsvp/templates/rsvp/index.html:8
+#: wedsite/rsvp/templates/rsvp/request.html:9
+#: wedsite/rsvp/templates/rsvp/soon.html:8
+#: wedsite/rsvp/templates/rsvp/thanks.html:9
+msgid "days"
+msgstr "dias"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:45
+#: wedsite/rsvp/templates/rsvp/detail.html:52
+#: wedsite/rsvp/templates/rsvp/index.html:23
+#: wedsite/rsvp/templates/rsvp/index.html:59
+#: wedsite/rsvp/templates/rsvp/interest.html:53
+#: wedsite/rsvp/templates/rsvp/request.html:36
+#: wedsite/rsvp/templates/rsvp/soon.html:24
+#: wedsite/rsvp/templates/rsvp/soon.html:61
+#: wedsite/rsvp/templates/rsvp/thanks.html:52
+#: wedsite/templates/intro_text.html:18 wedsite/templates/navbar.html:34
+msgid "RSVP"
+msgstr "Confirmar Presença"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:53
+msgid "Who in your party is attending?"
+msgstr "Quem participará?"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:54
+#: wedsite/rsvp/templates/rsvp/interest.html:55
+#: wedsite/rsvp/templates/rsvp/thanks.html:54
+msgid "Confirmation"
+msgstr "Confirmação"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:67
+#: wedsite/templates/pages/event.html:26 wedsite/templates/pages/event.html:43
+msgid "The Wedding"
+msgstr "Nosso Casamento"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:68
+msgid "Ceremony &amp; Reception"
+msgstr "Jantar &amp; Recepção"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:72
+#: wedsite/templates/pages/travel.html:73
+msgid "Philadelphia"
+msgstr "Filadélfia"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:73
+#: wedsite/templates/intro_text.html:15 wedsite/templates/navbar.html:26
+#: wedsite/templates/pages/event.html:116
+#: wedsite/templates/pages/event.html:316
+msgid "June 25, 2016"
+msgstr "25 de Junho, 2016"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:74
+msgid "More info"
+msgstr "Mais info"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:81
+msgid "Please indicate who in your party will be attending."
+msgstr "Indique quem da sua família comparecerá."
+
+#: wedsite/rsvp/templates/rsvp/detail.html:112
+msgid "Rehearsal Dinner"
+msgstr "Jantar de Ensaio"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:115
+msgid "You have been invited for the Rehearsal Dinner."
+msgstr "Você foi convidado(a) para o Jantar de Ensaio."
+
+#: wedsite/rsvp/templates/rsvp/detail.html:117
+msgid "Friday, June 24, 2016 - 7PM"
+msgstr "24 de Junho, 2016 - 19h"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:118
+msgid "We'll update everyone when the location has been chosen."
+msgstr "Avisaremos assim que o local for escolhido."
+
+#: wedsite/rsvp/templates/rsvp/detail.html:119
+msgid "Will you be able to attend?"
+msgstr "Você poderá comparecer?"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:130
+#: wedsite/templates/account/email_confirm.html:24
+msgid "Confirm"
+msgstr "Confirmar"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:142
+#: wedsite/rsvp/templates/rsvp/index.html:95
+#: wedsite/rsvp/templates/rsvp/interest.html:86
+#: wedsite/rsvp/templates/rsvp/request.html:115
+#: wedsite/rsvp/templates/rsvp/thanks.html:126
+msgid "We are so excited to see everyone at the wedding."
+msgstr "Estamos super animados pra ver todo mundo no casamento!"
+
+#: wedsite/rsvp/templates/rsvp/detail.html:143
+#: wedsite/rsvp/templates/rsvp/index.html:96
+#: wedsite/rsvp/templates/rsvp/interest.html:87
+#: wedsite/rsvp/templates/rsvp/thanks.html:127
+msgid "Let us know if you have any problems RSVP'ing."
+msgstr "Avise-nos se encontrar problemas ao confirmar presença."
+
+#: wedsite/rsvp/templates/rsvp/index.html:35
+msgid ""
+"We ask for your email and for the wedding code you received with your "
+"invitation below."
+msgstr "Pedimos o seu email e código que você recebeu com seu convite."
+
+#: wedsite/rsvp/templates/rsvp/index.html:36
+msgid "RSVP is now closed."
+msgstr ""
+
+#: wedsite/rsvp/templates/rsvp/index.html:36
+msgid "If you change your response, please send us a message."
+msgstr ""
+
+#: wedsite/rsvp/templates/rsvp/index.html:80
+msgid "Continue"
+msgstr "Continuar"
+
+#: wedsite/rsvp/templates/rsvp/index.html:87
+msgid "Don't have a Wedding Code?"
+msgstr "Não tem um Código?"
+
+#: wedsite/rsvp/templates/rsvp/interest.html:54
+#, fuzzy
+#| msgid "The Events"
+msgid ">Other Events"
+msgstr "Eventos"
+
+#: wedsite/rsvp/templates/rsvp/interest.html:68
+#: wedsite/rsvp/templates/rsvp/request.html:51
+#: wedsite/rsvp/templates/rsvp/thanks.html:67
+msgid "Thanks!"
+msgstr "Obrigado!"
+
+#: wedsite/rsvp/templates/rsvp/interest.html:69
+msgid "We've registered your interest in the"
+msgstr ""
+
+#: wedsite/rsvp/templates/rsvp/request.html:50
+msgid ""
+"  You should have received a Wedding Code with your invitation. If you've "
+"lost it or didn't receive it, let us know by giving us your name and email "
+"below."
+msgstr ""
+"Você deve ter recebido um código junto com seu convite. Se você o perdeu ou "
+"não recebeu, nos avise dando seu nome e email abaixo."
+
+#: wedsite/rsvp/templates/rsvp/request.html:74
+msgid "Request a Wedding Code to RSVP"
+msgstr "Solicitar Código para Confirmar Presença"
+
+#: wedsite/rsvp/templates/rsvp/request.html:98
+msgid "Send Request"
+msgstr "Enviar Solicitação"
+
+#: wedsite/rsvp/templates/rsvp/request.html:105
+msgid "Already have a Wedding Code?"
+msgstr "Já tem um Código?"
+
+#: wedsite/rsvp/templates/rsvp/request.html:116
+msgid " Let us know if you have any problems RSVP'ing."
+msgstr "Avise-nos se encontar problemas ao confirmar presença."
+
+#: wedsite/rsvp/templates/rsvp/soon.html:33
+msgid "Really soon now..."
+msgstr "Agora falta pouco..."
+
+#: wedsite/rsvp/templates/rsvp/soon.html:37
+msgid "You'll be able to RSVP online very soon."
+msgstr "Você poderá confirmar presença online logo, logo."
+
+#: wedsite/rsvp/templates/rsvp/soon.html:38
+msgid "Please leave your email so we can notify you of when RSVP opens."
+msgstr ""
+"Deixe seu email para que a gente possa te avisar quando a confirmação "
+"estiver funcionando."
+
+#: wedsite/rsvp/templates/rsvp/soon.html:68 wedsite/templates/footer.html:28
+msgid "Your Email"
+msgstr "Seu Email"
+
+#: wedsite/rsvp/templates/rsvp/soon.html:78
+msgid "Notify me!"
+msgstr "Avise-me!"
+
+#: wedsite/rsvp/templates/rsvp/soon.html:88
+msgid "We are very excited to see everyone at the wedding!"
+msgstr "Estamos super animados pra ver todo mundo no casamento!"
+
+#: wedsite/rsvp/templates/rsvp/thanks.html:53
+msgid ">Who's in your party?"
+msgstr "Pessoas na família"
+
+#: wedsite/rsvp/templates/rsvp/thanks.html:68
+msgid "Your RSVP has been received."
+msgstr "Sua Confirmação de Presença foi recebida!"
+
+#: wedsite/rsvp/templates/rsvp/thanks.html:80
+msgid ""
+"Optionally, if there is anything you'd like to let us know about your RSVP, "
+"send us a message below."
+msgstr ""
+"Se desejar, você pode deixar um comentário acerca da sua Confirmação de "
+"Presença abaixo."
+
+#: wedsite/rsvp/templates/rsvp/thanks.html:113
+msgid "Send"
+msgstr "Enviar"
+
+#: wedsite/rsvp/views.py:45
+msgid "We'll let you know when RSVP is open. Thanks!"
+msgstr ""
+"Nós te avisaremos quando a Confirmação de Presença estiver aberta. Obrigado!!"
+
+#: wedsite/rsvp/views.py:48 wedsite/rsvp/views.py:175
+msgid "There were problems with your request."
+msgstr "Houve um problema com sua solicitação."
+
+#: wedsite/rsvp/views.py:127 wedsite/rsvp/views.py:142
+#: wedsite/rsvp/views.py:155
+msgid "Sorry, we couldn't log you in at this time."
+msgstr "Desculpe, mas não foi possível logá-lo nesse momento."
+
+#: wedsite/rsvp/views.py:147
+msgid ""
+"You've logged in with a different email address. Try again with the correct "
+"one."
+msgstr ""
+"Antes, você acessou usando outro endereço de email. Use o mesmo endereço do "
+"primeiro acesso."
+
+#: wedsite/rsvp/views.py:172
+msgid "Your request has been saved. Thanks!"
+msgstr "Sua solicitação foi salva. Obrigado!"
+
+#: wedsite/rsvp/views.py:258
+msgid "Thanks, we received your message."
+msgstr "Obrigado, recebemos sua mensagem."
+
+#: wedsite/rsvp/views.py:262
+msgid "Sorry, your message could not be sent."
+msgstr "Desculpe, sua mensagem não pôde ser enviada."
+
+#: wedsite/templates/account/email.html:7
+msgid "Account"
+msgstr "Conta"
+
+#: wedsite/templates/account/email.html:13
+msgid "E-mail Addresses"
+msgstr "Email"
+
+#: wedsite/templates/account/email.html:15
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: wedsite/templates/account/email.html:29
+msgid "Verified"
+msgstr ""
+
+#: wedsite/templates/account/email.html:31
+msgid "Unverified"
+msgstr ""
+
+#: wedsite/templates/account/email.html:33
+msgid "Primary"
+msgstr ""
+
+#: wedsite/templates/account/email.html:39
+msgid "Make Primary"
+msgstr ""
+
+#: wedsite/templates/account/email.html:40
+msgid "Re-send Verification"
+msgstr ""
+
+#: wedsite/templates/account/email.html:41
+msgid "Remove"
+msgstr ""
+
+#: wedsite/templates/account/email.html:48
+msgid "Warning:"
+msgstr ""
+
+#: wedsite/templates/account/email.html:48
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: wedsite/templates/account/email.html:53
+msgid "Add E-mail Address"
+msgstr ""
+
+#: wedsite/templates/account/email.html:58
+msgid "Add E-mail"
+msgstr ""
+
+#: wedsite/templates/account/email.html:69
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: wedsite/templates/account/email_confirm.html:7
+#: wedsite/templates/account/email_confirm.html:14
+#: wedsite/templates/account/email_confirmed.html:6
+#: wedsite/templates/account/email_confirmed.html:13
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: wedsite/templates/account/email_confirm.html:20
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: wedsite/templates/account/email_confirm.html:31
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: wedsite/templates/account/email_confirmed.html:17
+#, python-format
+msgid ""
+"You have confirmed that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-"
+"mail address for user %(user_display)s."
+msgstr ""
+
+#: wedsite/templates/account/login.html:8
+#: wedsite/templates/account/login.html:14
+#: wedsite/templates/account/login.html:41
+msgid "Sign In"
+msgstr ""
+
+#: wedsite/templates/account/login.html:17
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"      of your existing third party accounts. Or, <a href=\"%(signup_url)s"
+"\">sign up</a>\n"
+"      for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: wedsite/templates/account/login.html:27
+msgid "or"
+msgstr ""
+
+#: wedsite/templates/account/login.html:42
+msgid "Forgot Password?"
+msgstr ""
+
+#: wedsite/templates/account/logout.html:6
+#: wedsite/templates/account/logout.html:13
+#: wedsite/templates/account/logout.html:22
+msgid "Sign Out"
+msgstr ""
+
+#: wedsite/templates/account/logout.html:15
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: wedsite/templates/account/password_change.html:5
+#: wedsite/templates/account/password_change.html:11
+#: wedsite/templates/account/password_change.html:16
+#: wedsite/templates/account/password_reset_from_key.html:7
+#: wedsite/templates/account/password_reset_from_key.html:13
+#: wedsite/templates/account/password_reset_from_key_done.html:5
+#: wedsite/templates/account/password_reset_from_key_done.html:11
+msgid "Change Password"
+msgstr ""
+
+#: wedsite/templates/account/password_reset.html:7
+#: wedsite/templates/account/password_reset.html:14
+#: wedsite/templates/account/password_reset_done.html:6
+#: wedsite/templates/account/password_reset_done.html:12
+msgid "Password Reset"
+msgstr ""
+
+#: wedsite/templates/account/password_reset.html:19
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: wedsite/templates/account/password_reset.html:24
+msgid "Reset My Password"
+msgstr ""
+
+#: wedsite/templates/account/password_reset.html:27
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: wedsite/templates/account/password_reset_done.html:18
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: wedsite/templates/account/password_reset_from_key.html:13
+msgid "Bad Token"
+msgstr ""
+
+#: wedsite/templates/account/password_reset_from_key.html:17
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: wedsite/templates/account/password_reset_from_key.html:23
+msgid "change password"
+msgstr ""
+
+#: wedsite/templates/account/password_reset_from_key.html:26
+#: wedsite/templates/account/password_reset_from_key_done.html:12
+msgid "Your password is now changed."
+msgstr ""
+
+#: wedsite/templates/account/password_set.html:6
+#: wedsite/templates/account/password_set.html:12
+#: wedsite/templates/account/password_set.html:17
+msgid "Set Password"
+msgstr ""
+
+#: wedsite/templates/account/signup.html:7
+msgid "Signup"
+msgstr ""
+
+#: wedsite/templates/account/signup.html:10
+#: wedsite/templates/account/signup.html:20
+msgid "Sign Up"
+msgstr ""
+
+#: wedsite/templates/account/signup.html:12
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: wedsite/templates/account/signup_closed.html:6
+#: wedsite/templates/account/signup_closed.html:12
+msgid "Sign Up Closed"
+msgstr ""
+
+#: wedsite/templates/account/signup_closed.html:14
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: wedsite/templates/account/verification_sent.html:5
+#: wedsite/templates/account/verification_sent.html:11
+#: wedsite/templates/account/verified_email_required.html:6
+#: wedsite/templates/account/verified_email_required.html:12
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: wedsite/templates/account/verification_sent.html:13
+#, python-format
+msgid ""
+"We have sent an e-mail to <a href=\"mailto:%(email)s\">%(email)s</a> for "
+"verification. Follow the link provided to finalize the signup process. "
+"Please contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: wedsite/templates/account/verified_email_required.html:16
+msgid ""
+"This part of the site requires us to verify that\n"
+"        you are who you claim to be. For this purpose, we require that you\n"
+"        verify ownership of your e-mail address. "
+msgstr ""
+
+#: wedsite/templates/account/verified_email_required.html:20
+msgid ""
+"We have sent an e-mail to you for\n"
+"        verification. Please click on the link inside this e-mail. Please\n"
+"        contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: wedsite/templates/account/verified_email_required.html:24
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: wedsite/templates/base.html:160
+msgid "Something looks wrong with the Captcha there."
+msgstr "Há algo errado com o verificador Captcha."
+
+#: wedsite/templates/base.html:164
+msgid "Are you sure the Captcha has been completed?"
+msgstr "Você tem certeza que o verificador Captcha foi completado?"
+
+#: wedsite/templates/footer.html:14
+msgid "Get in touch"
+msgstr "Fale com a gente!"
+
+#: wedsite/templates/footer.html:23 wedsite/templates/footer.html.py:24
+msgid "Name"
+msgstr "Nome"
+
+#: wedsite/templates/footer.html:24
+msgid "Please enter your name."
+msgstr "Digite o seu nome."
+
+#: wedsite/templates/footer.html:29
+msgid "Your E-mail"
+msgstr "Seu Email"
+
+#: wedsite/templates/footer.html:29
+msgid "Please enter your email address."
+msgstr "Digite o seu email."
+
+#: wedsite/templates/footer.html:33
+msgid "Message"
+msgstr "Mensagem"
+
+#: wedsite/templates/footer.html:33
+msgid "Please enter your message."
+msgstr "Digite sua mensagem."
+
+#: wedsite/templates/footer.html:41
+msgid "Submit"
+msgstr "Enviar"
+
+#: wedsite/templates/footer.html:53
+msgid "Close"
+msgstr "Fechar"
+
+#: wedsite/templates/footer.html:63
+msgid "Drop us a line"
+msgstr "Fale com a gente"
+
+#: wedsite/templates/footer.html:63
+msgid "here!"
+msgstr "aqui!"
+
+#: wedsite/templates/intro_text.html:5
+msgid "Our Wedding"
+msgstr "Nosso Casamento"
+
+#: wedsite/templates/intro_text.html:16 wedsite/templates/pages/event.html:144
+#: wedsite/templates/pages/event.html:340
+#: wedsite/templates/pages/event.html:432
+msgid "Philadelphia, PA"
+msgstr "Filadélfia, Pensilvânia"
+
+#: wedsite/templates/navbar.html:24
+msgid "El"
+msgstr "Lis"
+
+#: wedsite/templates/navbar.html:25
+msgid "Raf"
+msgstr "Rafa"
+
+#: wedsite/templates/navbar.html:30 wedsite/templates/pages/story.html:8
+msgid "Our Story"
+msgstr "Nossa História"
+
+#: wedsite/templates/navbar.html:31 wedsite/templates/pages/event.html:13
+msgid "The Events"
+msgstr "Eventos"
+
+#: wedsite/templates/navbar.html:32 wedsite/templates/pages/travel.html:9
+msgid "Travel Plans"
+msgstr "Sua Viagem"
+
+#: wedsite/templates/navbar.html:33
+msgid "Registry"
+msgstr "Lista de Casamento"
+
+#: wedsite/templates/pages/event.html:27
+msgid "Wedding After Party"
+msgstr "Festa depois da Festa"
+
+#: wedsite/templates/pages/event.html:31
+msgid "It's a known fact that"
+msgstr "É um fato que"
+
+#: wedsite/templates/pages/event.html:31
+msgid "lobsters fall in love"
+msgstr "as lagostas, quando se apaixonam,"
+
+#: wedsite/templates/pages/event.html:31
+msgid "and mate for life."
+msgstr "é pra vida inteira."
+
+#: wedsite/templates/pages/event.html:32
+msgid ""
+"You can actually see old lobster couples walkin' around their tank, holding "
+"claws."
+msgstr ""
+"Você pode ver casais de lagostas velhinhas andando no tanque, segurando as "
+"patinhas."
+
+#: wedsite/templates/pages/event.html:58
+msgid "Program"
+msgstr "Programa"
+
+#: wedsite/templates/pages/event.html:68
+msgid "Ceremony"
+msgstr "Cerimônia"
+
+#: wedsite/templates/pages/event.html:81
+#: wedsite/templates/pages/event/menu.html:24
+msgid "Cocktail Hour"
+msgstr "Coquetel"
+
+#: wedsite/templates/pages/event.html:94
+#: wedsite/templates/pages/event/menu.html:27
+msgid "Dinner &amp; Reception"
+msgstr "Jantar &amp; Recepção"
+
+#: wedsite/templates/pages/event.html:115
+msgid "When"
+msgstr "Quando"
+
+#: wedsite/templates/pages/event.html:120
+#: wedsite/templates/pages/event.html:318
+#: wedsite/templates/pages/event.html:410
+msgid "Add to Calendar"
+msgstr "Adicionar ao Calendário"
+
+#: wedsite/templates/pages/event.html:123
+msgid "Wedding Day!"
+msgstr "Dia do Casamento!"
+
+#: wedsite/templates/pages/event.html:123
+msgid "Elisabeth and Rafael get married."
+msgstr "Elisabeth e Rafael se casam."
+
+#: wedsite/templates/pages/event.html:140
+msgid "Where"
+msgstr "Onde"
+
+#: wedsite/templates/pages/event.html:146
+msgid "See in Google Maps"
+msgstr "Veja no Google Maps"
+
+#: wedsite/templates/pages/event.html:157
+msgid "Attire Tip"
+msgstr "Dica de Traje"
+
+#: wedsite/templates/pages/event.html:159
+msgid "Outdoor Garden"
+msgstr "Jardim Externo"
+
+#: wedsite/templates/pages/event.html:160
+msgid "Since this is an outdoor wedding,"
+msgstr "Como o casamento é em ambiente externo,"
+
+#: wedsite/templates/pages/event.html:161
+msgid "heels aren't recommended!"
+msgstr "salto-alto não é recomendado!"
+
+#: wedsite/templates/pages/event.html:170
+msgid "Babysitter"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:172
+msgid "5:30 PM to 9:30 PM"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:173
+msgid "We'll have Iris's sitter"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:174
+msgid "watching the kids"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:174
+msgid "at the Physick House."
+msgstr ""
+
+#: wedsite/templates/pages/event.html:188
+msgid "The Wedding Party"
+msgstr "Madrinhas e Padrinhos"
+
+#: wedsite/templates/pages/event.html:199
+msgid "The Best friend"
+msgstr "A melhor amiga"
+
+#: wedsite/templates/pages/event.html:200
+msgid ""
+"Eight years of theater, traveling, city-living and drinking way too much "
+"beer!"
+msgstr "Oito anos de teatro, viagens, morando juntas e bebendo cerveja demais!"
+
+#: wedsite/templates/pages/event.html:208
+msgid "Bridesmaid"
+msgstr "Madrinha"
+
+#: wedsite/templates/pages/event.html:219
+msgid "The Sister-Friend"
+msgstr "A Irmã-Amiga"
+
+#: wedsite/templates/pages/event.html:220
+msgid ""
+"From American Girl dolls, and playing in the dirt, to adulthood and aunthood."
+msgstr "Das brincadeiras com boneca e na lama, a super-tia."
+
+#: wedsite/templates/pages/event.html:228
+msgid "Maid of Honor"
+msgstr "Madrinha"
+
+#: wedsite/templates/pages/event.html:239
+msgid "The little brother"
+msgstr "O irmãozinho"
+
+#: wedsite/templates/pages/event.html:240
+msgid ""
+"Raf's little brother will stand up to the occasion as his best man - what "
+"could go wrong?"
+msgstr ""
+"Irmãozinho do Rafael se transforma em Padrinho Honorário - o que poderia dar "
+"errado?"
+
+#: wedsite/templates/pages/event.html:248
+msgid "Best man"
+msgstr "Padrinho"
+
+#: wedsite/templates/pages/event.html:259
+msgid "The Real 'Work' Friend"
+msgstr "O amigo 'de trabalho'"
+
+#: wedsite/templates/pages/event.html:260
+msgid ""
+"Raf's friend from the same Drexel lab as him, who witnessed the Raf-Lis "
+"trajectory from the beginning."
+msgstr ""
+"Amigo do Rafa, do mesmo laboratório que ele, que acompanhou a trajetória do "
+"casal desde o começo."
+
+#: wedsite/templates/pages/event.html:265
+msgid "Groomsman"
+msgstr "Padrinho"
+
+#: wedsite/templates/pages/event.html:284
+msgid "The party can't stop!"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:285
+msgid "Follow us to 2nd Story Brewing immediately after the reception."
+msgstr ""
+
+#: wedsite/templates/pages/event.html:296
+msgid "We have a few tables and high-tops reserved by the bar."
+msgstr ""
+
+#: wedsite/templates/pages/event.html:297
+msgid ""
+"Craft beer &amp; creative pub grub, including pizza &amp; charcuterie, in a "
+"bright, rustic-chic setting."
+msgstr ""
+
+#: wedsite/templates/pages/event.html:299
+#: wedsite/templates/pages/event.html:385
+msgid "We hope to see you there. No RSVP is necessary!"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:323
+msgid "Join us for our wedding after party!"
+msgstr ""
+
+#: wedsite/templates/pages/event.html:363
+#, fuzzy
+#| msgid ""
+#| "Soothe your hangover and join us for brunch at Parc the morning after!"
+msgid ""
+"Soothe your hangover and join us for breakfast at Washington Square Park the "
+"morning after!"
+msgstr "Alivie sua ressaca e junte-se a nós para o brunch na manhã seguinte!"
+
+#: wedsite/templates/pages/event.html:382
+#, fuzzy
+#| msgid ""
+#| "We're hosting a postwedding brunch at our favorite brunch spot in Philly "
+#| "- Parc at Rittenhouse."
+msgid ""
+"We're hosting a post-wedding breakfast picnic at one of our favorite spots "
+"in Philly - Washington Square Park."
+msgstr ""
+"Estamos organizando um brunch pós-casamento em um dos nossos restaurantes "
+"favoritos na cidade - Parc em Rittenhouse."
+
+#: wedsite/templates/pages/event.html:383
+msgid ""
+"We'll have an assortment of our favorite pastries - Federal Donuts, DiBruno "
+"Bagels, and more."
+msgstr ""
+
+#: wedsite/templates/pages/event.html:408
+msgid "June 26, 2016"
+msgstr "26 de Junho, 2016"
+
+#: wedsite/templates/pages/event.html:415
+#, fuzzy
+#| msgid "Join us for our first brunch the day after the wedding."
+msgid "Join us for our first breakfast the day after the wedding."
+msgstr "Vem com a gente participar do nosso primeiro brunch depois de casados."
+
+#: wedsite/templates/pages/event.html:415
+#, fuzzy
+#| msgid "We'll see everyone at Parc on Rittenhouse Park."
+msgid "We'll see everyone at Washington Square Park!"
+msgstr "Esperamos ver todo mundo no Parc, em frente ao Rittenhouse Park."
+
+#: wedsite/templates/pages/event/menu.html:9
+msgid "Catered by Jose Garces"
+msgstr "Servido por Jose Garces"
+
+#: wedsite/templates/pages/event/menu.html:17
+msgid "Our Wedding Menu"
+msgstr "O Cardápio do Nosso Casamento"
+
+#: wedsite/templates/pages/event/menu.html:134
+msgid "Beverages"
+msgstr "Bebidas"
+
+#: wedsite/templates/pages/event/menu.html:193
+msgid "Red and White Wines"
+msgstr "Vinhos Vermelho e Branco"
+
+#: wedsite/templates/pages/event/menu.html:207
+msgid "Soft drinks, mocktails and lemonades"
+msgstr "Refrigerantes, sucos e limonadas"
+
+#: wedsite/templates/pages/event/menu.html:214
+msgid "Signature Drink"
+msgstr "Coquetel da Noite"
+
+#: wedsite/templates/pages/event/menu.html:215
+msgid "Brazil's national cocktail, made with cachaça, sugar and lime."
+msgstr "Bebida tradicional brasileira, feita com cachaça, açúcar e limão."
+
+#: wedsite/templates/pages/home.html:38
+msgid "RSVP is now closed!"
+msgstr ""
+
+#: wedsite/templates/pages/home.html:38
+msgid ""
+"If you need to change your response, please do so and also send us a message."
+msgstr ""
+
+#: wedsite/templates/pages/home.html:38
+msgid "Click here to RSVP now."
+msgstr "Clique aqui para Confirmar Presença agora."
+
+#: wedsite/templates/pages/registry.html:17
+msgid "Our Registries"
+msgstr "Lista de Casamento"
+
+#: wedsite/templates/pages/registry.html:19
+msgid "Hey, you're too kind to have come to our Registry!"
+msgstr "Ah, que isso - você é gentil demais em procurar por nossa Lista!"
+
+#: wedsite/templates/pages/registry.html:19
+msgid "All we have to say is: don't fight that feeling! No, seriously, thanks!"
+msgstr "O que temos a dizer é: obrigado, mesmo!"
+
+#: wedsite/templates/pages/registry.html:39
+msgid "Our registry in the US"
+msgstr "Nossa Lista nos Estados Unidos"
+
+#: wedsite/templates/pages/registry.html:40
+msgid ""
+"We have a unique story, which as many of you know, includes an upcoming "
+"journey to Brasil, where we will live for two years!"
+msgstr ""
+"Nossa história é bastante única, e como muitos de vocês já sabem, nos "
+"mudaremos para o Brasil depois do casamento, onde iremos morar por dois anos!"
+
+#: wedsite/templates/pages/registry.html:41
+msgid ""
+"Because of this, many of the items you'll find here reflect either our "
+"travel needs, or financially contributing towards purchases we will make in "
+"2018 for our US home!"
+msgstr ""
+"Por isso, muitos dos itens nesta lista fazem parte do que precisaremos no "
+"Brasil ou para a viagem até lá. Também colocamos como o opção contribuir "
+"financeiramente com nossa lua de mel."
+
+#: wedsite/templates/pages/registry.html:43
+msgid "We love you all, and can't wait to see you at the wedding!"
+msgstr "Estamos super animados pra ver todo mundo no casamento!"
+
+#: wedsite/templates/pages/registry.html:43
+msgid "Obrigado!"
+msgstr "Thanks!"
+
+#: wedsite/templates/pages/registry.html:58
+msgid "Click here for our registry"
+msgstr "Clique aqui para ver a Lista (EUA)"
+
+#: wedsite/templates/pages/registry.html:60
+msgid "at Zola!"
+msgstr "na Zola!"
+
+#: wedsite/templates/pages/registry.html:88
+msgid "Friends &amp; family in Brasil"
+msgstr "Amigos &amp; familiares no Brasil"
+
+#: wedsite/templates/pages/registry.html:89
+msgid "We have a separate registry in Brasil, for our time there!"
+msgstr ""
+"Nós temos uma Lista de Casamento específica para o Brasil, para o tempo que "
+"passaremos lá."
+
+#: wedsite/templates/pages/registry.html:97
+msgid "View Brazilian Registry"
+msgstr "Ver a Lista de Casamento do Brasil"
+
+#: wedsite/templates/pages/registry.html:117
+msgid "Wedding Registry for Brasil"
+msgstr "Lista de Casamento no Brasil"
+
+#: wedsite/templates/pages/registry.html:119
+msgid ""
+"We tried to make it a little easier by having our registry in more than one "
+"store - they both work. A registry in a physical store should be added soon "
+"too!"
+msgstr ""
+"Nós tentamos facilitar colocando nossa Lista em mais de uma loja - qualquer "
+"uma funciona! A mesma Lista vai ser colocada numa loja física em Indaiatuba/"
+"SP, e colocaremos os detalhes aqui também."
+
+#: wedsite/templates/pages/story.html:21
+msgid "When you know, you just know."
+msgstr "Quando você sabe, você sabe."
+
+#: wedsite/templates/pages/story.html:23
+msgid ""
+" Elisabeth insists that, in October of 2014, she was at her wits end with "
+"online dating; the medium through which so many single 20-something's are "
+"compelled to meet in the new millennium."
+msgstr ""
+"A Elisabeth insiste que, em Outubro de 2014, ela estava esgotada e sem "
+"paciência com sites de namoro; o tipo de site que cada vez mais pessoas "
+"estão usando pra conhecer pessoas."
+
+#: wedsite/templates/pages/story.html:24
+msgid ""
+"Rafael had arrived in Philly from Brasil that fall, and reached out to "
+"Elisabeth upon discovering her amidst the online dating chaos."
+msgstr ""
+"O Rafael tinha chegado na Filadélfia, vindo do Brasil, naquele Outono, e em "
+"meio a todo o caos de relacionamentos online, ele mandou uma mensagem pra "
+"ela."
+
+#: wedsite/templates/pages/story.html:51
+msgid ""
+"One evening in October, a jaded Elisabeth and a bright eyed Rafael met for a "
+"drink at the Franklin Mortgage Exchange. Everything took off from there!"
+msgstr ""
+"Numa noite em Outubro, uma Elisabeth desconfiada e um Rafael animado se "
+"encontraram num bar no centro da cidade, o Franklin Mortgage Exchange. E foi "
+"aí que tudo começou!"
+
+#: wedsite/templates/pages/story.html:54
+msgid ""
+"An early November night at the Art Museum lead to the two agreeing they "
+"wanted to be"
+msgstr ""
+"Uma noite no começo de Novembro no Museu de Arte Moderna levou os dois a "
+"concordarem que queriam que o relacionamento fosse"
+
+#: wedsite/templates/pages/story.html:54
+msgid "official"
+msgstr "oficial"
+
+#: wedsite/templates/pages/story.html:54
+msgid ""
+"Later, Rafael joined the Frankenbach family in the Poconos for Christmas, "
+"where he passed the wood chopping test/right of passage."
+msgstr ""
+"Mais tarde, Rafael se juntou à família Frankenbach nas montanhas Poconos "
+"para o Natal, onde ele foi aprovado no teste/ritual de passagem de corte de "
+"lenha."
+
+#: wedsite/templates/pages/story.html:107
+msgid ""
+"On New Year's Eve in Center City, a conversation over caipirinhas led Rafael "
+"and El to realize how much they wanted to get married."
+msgstr ""
+"No Ano Novo, em Center City, uma conversa com caipirinhas e tequilas fez com "
+"que os dois percebessem o quanto eles queriam se casar."
+
+#: wedsite/templates/pages/story.html:113
+msgid "Upon sharing the news with Cathy, she heaved a sigh of relief;"
+msgstr ""
+"Ao compartilhar a notícia com a Cathy, mãe de Elisabeth, ela se disse "
+"aliviada;"
+
+#: wedsite/templates/pages/story.html:113
+msgid "I thought you were about to say I'm going to be a grandmother."
+msgstr "Achei que ia me contar que eu seria avó."
+
+#: wedsite/templates/pages/story.html:119
+msgid ""
+"Little did we know, Iris was rapidly dividing and multiplying like the pint-"
+"sized superhero she is."
+msgstr ""
+"Mal sabíamos que a Íris estava rapidamente se dividindo e multiplicando como "
+"a pequena super-poderosa que ela é."
+
+#: wedsite/templates/pages/story.html:143
+msgid ""
+"On February 15, 2015, Rafael proposed to El at FLC surrounded by a snow "
+"drift and the beauty of a wintry Wolf Lake."
+msgstr ""
+"Em 15 de Fevereiro de 2015, Rafael pediu a Lis em casamento no Forest Lake "
+"Club, no meio da nevem ao lado de um congelado lago, o Wolf Lake."
+
+#: wedsite/templates/pages/story.html:146
+msgid ""
+" Raf may not believe in fate, but El is convinced that they were destined to "
+"meet. Despite plenty of hurdles, including a summer that put them through "
+"the wringer as they dealt with being thousands of miles apart, Rafael and El "
+"cannot wait to spend the rest of their lives together."
+msgstr ""
+"O Rafael pode não acreditar em destino, mas a Lis está convencida de que "
+"estavam destinados a se conhecer. Apesar de dificuldades, incluindo todo um "
+"verão que tiveram que passar em lados opostos do país, os dois mal podem "
+"esperar para passar o resto de suas vidas juntos."
+
+#: wedsite/templates/pages/travel.html:22
+msgid "Transit"
+msgstr "Trânsito"
+
+#: wedsite/templates/pages/travel.html:23
+msgid "Accomodations"
+msgstr "Hospedagem"
+
+#: wedsite/templates/pages/travel.html:24
+msgid "U.S. Visa"
+msgstr "Visto Americano"
+
+#: wedsite/templates/pages/travel.html:25
+msgid "Dining"
+msgstr "Restaurantes"
+
+#: wedsite/templates/pages/travel.html:26
+msgid "Things to do"
+msgstr "Coisas Legais pra Fazer"
+
+#: wedsite/templates/pages/travel.html:32
+msgid "Getting to Philly!"
+msgstr "Como Chegar na Filadélfia!"
+
+#: wedsite/templates/pages/travel.html:34
+msgid "Travel plans and suggested accomodations!"
+msgstr "Planejando a Viagem e Sugestões de Hospedagem"
+
+#: wedsite/templates/pages/travel.html:43
+msgid "No, really, how do I get there?"
+msgstr "Não, sério, como que eu chego aí?"
+
+#: wedsite/templates/pages/travel.html:49
+msgid "By Plane"
+msgstr "De Avião"
+
+#: wedsite/templates/pages/travel.html:52
+msgid "By Car"
+msgstr "De Carro"
+
+#: wedsite/templates/pages/travel.html:55
+msgid "By Bus"
+msgstr "De Ônibus"
+
+#: wedsite/templates/pages/travel.html:63
+msgid ""
+"Two airports work: Philadelphia's is by far the easiest, but you can also "
+"get a train from Newark."
+msgstr ""
+"Dois aeroportos funcionam: o de Filadélfia é o mais fácil, mas dá pra "
+"terminar de chegar de trem de Newark."
+
+#: wedsite/templates/pages/travel.html:78
+#: wedsite/templates/pages/travel.html:95
+msgid "Search for Flights"
+msgstr "Procurar Vôos"
+
+#: wedsite/templates/pages/travel.html:105
+msgid ""
+" By car, the city is just two hours from New York City, 90 minutes from "
+"Baltimore, three hours from Washington D.C. and about an hour from Lancaster "
+"County, Atlantic City and the New Jersey shore via major highways."
+msgstr ""
+"De carro, a cidade está há duas horas de New York City, 90 minutos de "
+"Baltimore, três horas de Washington D.C. e em torno de uma hora de Lancaster "
+"County, Atlantic City e da costa de Nova Jersey."
+
+#: wedsite/templates/pages/travel.html:107
+msgid ""
+"Philadelphia is served by the PA Turnpike (I-276), I-76, I-476, I-95, US-1 "
+"and the New Jersey Turnpike."
+msgstr ""
+"Você pode chegar à Filadélfia com as rodovias I-276, I-76, I-476, I-95, US-1 "
+"e a Rodovia de New Jersey. "
+
+#: wedsite/templates/pages/travel.html:109
+msgid "If that doesn't mean much, head over to Google Maps!"
+msgstr "Se isso não ajudar, o Google Maps provavelmente vai!"
+
+#: wedsite/templates/pages/travel.html:112
+msgid "Directions in Google Maps"
+msgstr "Instruções no Google Maps"
+
+#: wedsite/templates/pages/travel.html:117
+msgid "You might consider carpooling with someone."
+msgstr "Vale a pena tentar pegar carona com alguém."
+
+#: wedsite/templates/pages/travel.html:118
+msgid "Reach out to us if you need help with that!"
+msgstr "Fale com a gente se você precisar de ajuda!"
+
+#: wedsite/templates/pages/travel.html:119
+msgid ""
+"If you're set on taking the bus, the following companies serve Philadelphia."
+msgstr "Se você precisar de ônibus, as seguintes empresas atendem Filadélfia."
+
+#: wedsite/templates/pages/travel.html:164
+msgid "And getting around"
+msgstr "Andando pela cidade"
+
+#: wedsite/templates/pages/travel.html:175
+msgid "$20 off with code ELANDRAF"
+msgstr "$20 de desconto com código ELANDRAF"
+
+#: wedsite/templates/pages/travel.html:175
+msgid ""
+"We like Lyft and use it a lot to get around the city. If you haven't used it "
+"before, here's a discount to help you get around during our wedding weekend: "
+"$20 in Lyft credit towards your first ride!"
+msgstr ""
+"Nós gostamos do Lyft, e usamos bastante para nos locomover na cidade. Se "
+"você nunca usou, aqui está um cupom para ajudar no fim de semana: $20 de "
+"desconto na primeira vez!"
+
+#: wedsite/templates/pages/travel.html:186
+msgid "Uber wedding discount"
+msgstr "Deconto de casamento Uber"
+
+#: wedsite/templates/pages/travel.html:186
+msgid ""
+"We use Uber too, but Lyft seems to be cheaper. So here's a discount to try "
+"Uber as well! For a free first ride up to $20, sign up with the code "
+"ELANDRAF."
+msgstr ""
+"A gente também usa Uber, mas o Lyft parece ser mais barato. Pra garantir  "
+"aqui está o código pra testar o Uber também. $20 de desconto no primeiro "
+"uso.  Use o código ELANDRAF"
+
+#: wedsite/templates/pages/travel.html:200
+msgid "Accommodations"
+msgstr "Hospedagem"
+
+#: wedsite/templates/pages/travel.html:202
+msgid ""
+"We have group rates available at the Best Western Independence Park Hotel. "
+"And there's always Airbnb."
+msgstr ""
+"Negociamos preços pra grupos no Best Western Independence Park Hotel. E "
+"sempre tem Airbnb."
+
+#: wedsite/templates/pages/travel.html:226
+msgid "Reservations"
+msgstr "Reservas"
+
+#: wedsite/templates/pages/travel.html:226
+msgid "By phone:"
+msgstr "Por telefone:"
+
+#: wedsite/templates/pages/travel.html:226
+msgid "(215) 922-4443"
+msgstr "+1 (215) 922-4443 "
+
+#: wedsite/templates/pages/travel.html:227
+msgid "By email"
+msgstr "Por email"
+
+#: wedsite/templates/pages/travel.html:228
+msgid "Be sure to mention you're part of the"
+msgstr "Lembre-se de mencionar que você faz parte do"
+
+#: wedsite/templates/pages/travel.html:229
+msgid "STENGER/CAMPOS Wedding"
+msgstr "grupo do Casamento STENGER/CAMPOS"
+
+#: wedsite/templates/pages/travel.html:229
+msgid "group"
+msgstr " "
+
+#: wedsite/templates/pages/travel.html:232
+msgid "Book online"
+msgstr "Reserve online"
+
+#: wedsite/templates/pages/travel.html:239
+msgid "Philadelphia, Pennsylvania"
+msgstr "Filadélfia, Pensilvânia"
+
+#: wedsite/templates/pages/travel.html:254
+msgid "1 Queen Bed"
+msgstr "1 Cama Tamanho Queen"
+
+#: wedsite/templates/pages/travel.html:264
+msgid "1 King Bed"
+msgstr "1 Cama Tamanho King"
+
+#: wedsite/templates/pages/travel.html:265
+#: wedsite/templates/pages/travel.html:278
+msgid "Microwave"
+msgstr "Microondas"
+
+#: wedsite/templates/pages/travel.html:272
+msgid "Two-Bedded"
+msgstr "Duas Camas"
+
+#: wedsite/templates/pages/travel.html:273
+msgid "Ideal to share"
+msgstr "Ideal para dividir"
+
+#: wedsite/templates/pages/travel.html:277
+msgid "Queen Beds"
+msgstr "Camas Tamanho Queen"
+
+#: wedsite/templates/pages/travel.html:283
+msgid "All rooms include Full Breakfast, TV and Internet and a Refrigerator."
+msgstr ""
+"Todos os quartos incluem Café da Manhã, TV e Internet, e uma Geladeira."
+
+#: wedsite/templates/pages/travel.html:287
+msgid "Other options"
+msgstr "Outras opções"
+
+#: wedsite/templates/pages/travel.html:300
+msgid ""
+"HC shows the most options, so it's a good comparison tool. Playing around "
+"with the filters usually yield better deals."
+msgstr "HC é o site com mais opções, então vale a pena dar uma olhada."
+
+#: wedsite/templates/pages/travel.html:315
+msgid ""
+"We like Airbnb, and have used it a few times ourselves. We really think you "
+"end up getting better locations at a much lower cost."
+msgstr ""
+"Nós gostamos do Airbnb, e já usamos várias vezes. Você pode conseguir uma "
+"localização melhor com preço bem mais baixo."
+
+#: wedsite/templates/pages/travel.html:330
+msgid ""
+"A more traditional hotel comparison tool, for when HC just isn't cutting it!"
+msgstr ""
+"Ferramenta tradicional para comparar hotéis. Alternativa para quando o HC "
+"não funcionar bem!"
+
+#: wedsite/templates/pages/travel.html:346
+msgid "Do you need an invitation letter for a US visa?"
+msgstr "Você precisa de uma Carta de Suporte para o Visto Americano?"
+
+#: wedsite/templates/pages/travel.html:351
+msgid ""
+" Let us know when you're RSVP'ing and we'll get you one as soon as possible."
+msgstr ""
+"Avise-nos quando estiver confirmando presença que prepararemos uma pra você "
+"o quanto antes."
+
+#: wedsite/templates/pages/travel.html:362
+msgid "You'll love Philly as much as we do!"
+msgstr "Você vai curtir a Filadélfia tanto quanto a gente!"
+
+#: wedsite/templates/pages/travel/dining.html:12
+msgid "Take a look at"
+msgstr "Dê uma olhada nos"
+
+#: wedsite/templates/pages/travel/dining.html:20
+msgid "Our Favorite Places"
+msgstr "Nossos Restaurantes Favoritos"
+
+#: wedsite/templates/pages/travel/dining.html:33
+msgid ""
+"Incredible house roasted coffee, with a nitrogen-powered cold brew: the "
+"Nitro. Pretty unique stuff!"
+msgstr ""
+"Torrefação de café feito no local, e café gelado com nitrogênio: o Nitro. "
+"Bem legal!"
+
+#: wedsite/templates/pages/travel/dining.html:44
+msgid ""
+"Spot of our 2nd date, an awesome beer selection, with endless taps - and you "
+"seriously have to try the ricotta lavender honey bruschetta."
+msgstr ""
+"Local do nosso 2o encontro, inúmeras cervejas, todas chopp. A comida não "
+"fica devendo em nada também."
+
+#: wedsite/templates/pages/travel/dining.html:55
+msgid ""
+"Control freak salads. Turkey burgers. With bacon. And apple slices. Just "
+"amazing! Some draft beer. Best sweet potato fries ever!!"
+msgstr ""
+"Saldas. Hambúrgueres de peru. Com bacon. E fatias de maçã. Demais!! A melhor "
+"batata doce frita do mundo!"
+
+#: wedsite/templates/pages/travel/dining.html:67
+msgid ""
+" Awesome bakery selection. Great coffee (in huge servings!) and an adorable "
+"place to sit outside, overlooking Washington Square."
+msgstr ""
+"Nossa padaria favorita. Cafés gigantes, e ambiente super agradável no Parque "
+"Washington."
+
+#: wedsite/templates/pages/travel/dining.html:77
+msgid "Check other dining recommendations!"
+msgstr "Veja outras recomendações de restaurantes!"
+
+#: wedsite/templates/pages/travel/thingstodo.html:6
+msgid "Things to check out in Philly"
+msgstr "Coisas para fazer por aqui"
+
+#: wedsite/templates/pages/travel/thingstodo.html:21
+msgid "Philadelphia Museum of Art"
+msgstr "Museu de Arte da Filadélfia"
+
+#: wedsite/templates/pages/travel/thingstodo.html:33
+msgid "Schuylkill Banks"
+msgstr "Parque Schuylkill Banks"
+
+#: wedsite/templates/pages/travel/thingstodo.html:45
+msgid "9th Street Italian Market"
+msgstr "Mercado Italiano na Rua 9"
+
+#~ msgid "Please RSVP by May 31st."
+#~ msgstr "Por favor Confirme Presença até 31 de Maio."
+
+#~ msgid ""
+#~ "Awesome french pastries and drinks are on us! And you can always order "
+#~ "from their incredible menu!"
+#~ msgstr ""
+#~ "Pães e croissants, além de bebidas, é por nossa conta! E você sempre pode "
+#~ "pedir mais coisa no menu, que é incrível!"
+
+#~ msgid ""
+#~ "We hope you can attend and will ask you to RSVP when you do so for the "
+#~ "wedding!"
+#~ msgstr ""
+#~ "Contamos com sua presença, e pediremos para você confirmar se poderá "
+#~ "participar quando Confirmar Presença para o casamento."
+
+#~ msgid "Time is ticking!"
+#~ msgstr "O tempo está passando!"
+
+#~ msgid "Be sure to RSVP by May 31st. "
+#~ msgstr "Confirme Presença até 31 de Maio."
+
+#~ msgid "The nephew"
+#~ msgstr "O sobrinho"
+
+#~ msgid ""
+#~ "Raf's nephew, straight from Brazil, to complete the altar line-up. Game "
+#~ "on!"
+#~ msgstr "Sobrinho do Rafael, pra completar o time. Que comecem os jogos!"

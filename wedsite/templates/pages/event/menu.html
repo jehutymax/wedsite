@@ -1,0 +1,229 @@
+{% load staticfiles i18n %}
+<section id="menu" class="module">
+    <div class="container">
+        <!-- Module header start -->
+        <div class="row">
+            <div class="col-sm-2 col-sm-offset-5">
+                <div class="alt-module-subtitle">
+                    <span class="holder-w"></span>
+                    <h5 class="font-serif">{% trans "Catered by Jose Garces" %}</h5>
+                    <span class="holder-w"></span>
+                </div>
+            </div>
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="module-title font-alt">{% trans "Our Wedding Menu" %}</h2>
+            </div>
+        </div>
+        <!-- .row -->
+        <!-- Module header end -->
+        <div class="row">
+            <div class="col-sm-6">
+                <h3 class="content-box-title font-serif">{% trans "Cocktail Hour" %}</h3>
+            </div>
+            <div class="col-sm-6">
+                <h3 class="content-box-title font-serif">{% trans "Dinner &amp; Reception" %}</h3>
+            </div>
+        </div>
+        <br>
+        <div class="row multi-columns-row">
+            <!-- Restaurant menu left col start -->
+            <div class="col-sm-6">
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Salmon Ceviche</h4>
+                            <div class="menu-detail font-serif">tequila cured, charred pineapple, tepache</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Rock Shrimp and Tomato Escabeche</h4>
+                            <div class="menu-detail font-serif">avocado espuma, cilantro</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Short Rib Empanada</h4>
+                            <div class="menu-detail font-serif">goat cheese fondue</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Guacamole</h4>
+                            <div class="menu-detail font-serif">served with crispy corn tortilla chips</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Market Crudite</h4>
+                            <div class="menu-detail font-serif">seasonal baby vegetables, green goddess dressing</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurant menu left col end -->
+            <!-- Restaurant menu right col start -->
+            <div class="col-sm-6">
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Grass Fed Beef Tenderloin</h4>
+                            <div class="menu-detail font-serif">roasted wild mushrooms, black pepper, shallot veal jus</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Organic Black Pearl Salmon</h4>
+                            <div class="menu-detail font-serif">romesco, espelette glaze</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Grilled Asparagus</h4>
+                            <div class="menu-detail font-serif">roasted Peppers, zucchini, red onion</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Baby Artichoke &amp; Melted Leek Gratin</h4>
+                            <div class="menu-detail font-serif">brie cheese, brioche bread crumbs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Maduros</h4>
+                            <div class="menu-detail font-serif">fried sweet plantain</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Endive Salad</h4>
+                            <div class="menu-detail font-serif">sevilla orange, bucherondin, golden raisins, anjou pears</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Restaurant menu right col end -->
+        </div>
+        <!-- .row -->
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-5">
+                <h3 class="content-box-title font-serif">{% trans "Beverages" %}</h3>
+            </div>
+        </div>
+        <br>
+        <div class="row multi-columns-row">
+            <!-- Restaurant menu left col start -->
+            <div class="col-sm-6">
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Victory Summer Love</h4>
+                            <div class="menu-detail font-serif">golden ale</div>
+                        </div>
+                        <div class="col-sm-4 menu-price-detail">
+                            <a href="https://untappd.com/b/victory-brewing-company-summer-love/18545" target="_blank">
+                                <img src="{% static 'images/logo/untappd.ico' %}" class="menu-price font-alt" />
+                            </a> &nbsp;
+                            <a href="http://www.beeradvocate.com/beer/profile/345/59987/" target="_blank">
+                                <img src="{% static 'images/logo/ba.ico' %}" class="menu-price font-alt" /> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Yards Saison</h4>
+                            <div class="menu-detail font-serif">saison / farmhouse ale</div>
+                        </div>
+                        <div class="col-sm-4 menu-price-detail">
+                            <a href="https://untappd.com/b/yards-brewing-co-yards-saison/4165" target="_blank">
+                                <img src="{% static 'images/logo/untappd.ico' %}" class="menu-price font-alt" />
+                            </a> &nbsp;
+                            <a href="http://www.beeradvocate.com/beer/profile/450/1510/" target="_blank">
+                                <img src="{% static 'images/logo/ba.ico' %}" class="menu-price font-alt" /> </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu">
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h4 class="menu-title font-alt">Yuengling Traditional</h4>
+                            <div class="menu-detail font-serif">lager</div>
+                        </div>
+                        <div class="col-sm-4 menu-price-detail">
+                            <a href="https://untappd.com/b/yuengling-brewery-traditional-lager/16649" target="_blank">
+                                <img src="{% static 'images/logo/untappd.ico' %}" class="menu-price font-alt" />
+                            </a> &nbsp;
+                            <a href="http://www.beeradvocate.com/beer/profile/182/1351/" target="_blank">
+                                <img src="{% static 'images/logo/ba.ico' %}" class="menu-price font-alt" /> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row multi-columns-row">
+                <!-- Restaurant menu left col start -->
+                <div class="col-sm-6">
+                    <div class="menu">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4 class="menu-title font-alt">{% trans "Red and White Wines" %}</h4>
+                            </div>
+                        </div>
+                    </div>
+<!--                     <div class="menu">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4 class="menu-title font-alt">Standard bar</h4>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="menu">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4 class="menu-title font-alt">{% trans "Soft drinks, mocktails and lemonades" %}</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu">
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <h4 class="menu-title font-alt">{% trans "Signature Drink" %}: Caipirinhas</h4>
+                                <div class="menu-detail font-serif">{% trans "Brazil's national cocktail, made with cachaça, sugar and lime." %}</div>
+                            </div>
+                            <div class="col-sm-4 menu-price-detail">
+                                <a href="https://en.wikipedia.org/wiki/Caipirinha" target="_blank">
+                                    <span class="icon-wine"></span>
+                                </a> &nbsp;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Menu end -->

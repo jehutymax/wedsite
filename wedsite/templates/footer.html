@@ -1,0 +1,69 @@
+{% load i18n %}
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <section id="contact" class="module">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h2 class="module-title font-alt">{% trans "Get in touch" %}</h2>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <form id="contact-form" role="form" novalidate="">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <label class="sr-only" for="cname">{% trans "Name" %}</label>
+                                        <input type="text" id="cname" class="form-control" name="cname" placeholder="{% trans "Name" %}*" required="" data-validation-required-message="{% trans "Please enter your name." %}">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="cemail">{% trans "Your Email" %}</label>
+                                        <input type="email" id="cemail" name="cemail" class="form-control" placeholder="{% trans "Your E-mail" %}*" required="" data-validation-required-message="{% trans "Please enter your email address." %}">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="cmessage" name="cmessage" rows="7" placeholder="{% trans "Message" %}*" required="" data-validation-required-message="{% trans "Please enter your message." %}"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6Ld9AwwTAAAAAEoK-dzE4T7IU6ip5JCshlz-5ydE">
+                                    </div>
+                                    <div id="captcha-message" class="ajax-response font-alt"></div>
+                                    <br>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-block btn-round btn-d">{% trans "Submit" %}</button>
+                                    </div>
+                                </form>
+                                <!-- Ajax response -->
+                                <div id="contact-response" class="ajax-response font-alt"></div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                    </div>
+                </section>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">{% trans "Close" %}</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer start -->
+<footer class="footer bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <p class="copyright font-alt">{% trans "Drop us a line" %} <a href="#" data-toggle="modal" data-target="#myModal">{% trans "here!" %}</a></p>
+            </div>
+        </div>
+        <!-- .row -->
+    </div>
+</footer>
+<!-- Footer end -->

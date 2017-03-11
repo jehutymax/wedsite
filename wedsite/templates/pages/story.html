@@ -1,0 +1,160 @@
+{% extends "base.html" %} {% load staticfiles i18n %} 
+{% block content %}
+<!-- Home start -->
+<section id="home" class="home-section home-parallax home-fade bg-dark-60" data-background="{% static 'images/story/ElisabethandRafael_Split.jpg' %}">
+    <div class="hs-caption">
+        <div class="caption-content">
+            <div class="hs-title-size-3 font-alt mb-40">
+                {% trans "Our Story" %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Home end -->
+<!-- Wrapper start -->
+<div class="main">
+    <!-- About start -->
+    <section id="about" class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h3 class="module-title font-serif">"{% trans "When you know, you just know." %}"</h3>
+                    <div class="module-subtitle font-serif large-text">
+                       "{% trans " Elisabeth insists that, in October of 2014, she was at her wits end with online dating; the medium through which so many single 20-something's are compelled to meet in the new millennium." %}"
+                        <br> "{% trans "Rafael had arrived in Philly from Brasil that fall, and reached out to Elisabeth upon discovering her amidst the online dating chaos." %}"
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+            <div class="row">
+                <div class="col-sm-2 col-sm-offset-5">
+                    <div class="large-text align-center">
+                        <a href="#story" class="section-scroll"><i class="fa fa-angle-down"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- About end -->
+    <!-- Divider -->
+    <hr class="divider-w">
+    <!-- Divider -->
+    <!-- Features start -->
+    <section id="story" class="module">
+        <div class="container">
+            <div class="row multi-columns-row">
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="features-item">
+                        <div class="module-subtitle font-serif">
+                            "{% trans "One evening in October, a jaded Elisabeth and a bright eyed Rafael met for a drink at the Franklin Mortgage Exchange. Everything took off from there!" %}"
+                        </div>
+                        <div class="module-subtitle font-serif">
+                            "{% trans "An early November night at the Art Museum lead to the two agreeing they wanted to be" %} "{% trans "official" %}." {% trans "Later, Rafael joined the Frankenbach family in the Poconos for Christmas, where he passed the wood chopping test/right of passage." %}"
+                        </div>
+                    </div>
+                </div>
+                <!-- Features end -->
+                <!-- Features start -->
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="features-item">
+                        <div class="hero-slider2">
+                            <ul class="slides">
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/boston.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+                                </li>
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/nye.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>   
+                                </li>
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/coffee.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+                                </li>
+                                 <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/nyc.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+                                </li>
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/elrey.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>   
+                                </li>
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/ring.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+                                </li>
+                                <li class="bg-dark-30 bg-dark" style="background-image:url({% static 'images/story/flc.jpg' %})"> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Features end -->
+            </div>
+            <!-- .row -->
+        </div>
+        <!-- .container -->
+    </section>
+    <!-- Features end -->
+    <!-- Divider -->
+    <hr class="divider-w">
+    <!-- Divider -->
+    <section class="module">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="module-icon">
+                                    <span class="icon-quote"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <blockquote class="testimonial-text font-alt"> "{% trans "On New Year's Eve in Center City, a conversation over caipirinhas led Rafael and El to realize how much they wanted to get married." %}" </blockquote>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <blockquote class="testimonial-text font-alt">" {% trans "Upon sharing the news with Cathy, she heaved a sigh of relief;" %} "{% trans "I thought you were about to say I'm going to be a grandmother." %}"</blockquote>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <blockquote class="testimonial-text font-alt">"{% trans "Little did we know, Iris was rapidly dividing and multiplying like the pint-sized superhero she is." %}"</blockquote>
+                            </div>
+                        </div>
+                        <!-- .row -->
+                    </div>
+                    <!-- .container -->
+                </div>
+                <div class="col-sm-6">
+                    <img src="{% static 'images/story/strip.jpg' %}" alt="">
+                    <img src="{% static 'images/story/strip2.jpg' %}" alt="">
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+    <hr class="divider-w">
+    <section class="module bg-dark-90" data-background="{% static 'images/summer_house.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="video-box">
+                        <div class="video-box-icon">
+                        </div>
+                        <div class="video-title font-alt">
+                            "{% trans "On February 15, 2015, Rafael proposed to El at FLC surrounded by a snow drift and the beauty of a wintry Wolf Lake." %}"
+                        </div>
+                        <div class="video-subtitle font-alt">
+                           "{% trans " Raf may not believe in fate, but El is convinced that they were destined to meet. Despite plenty of hurdles, including a summer that put them through the wringer as they dealt with being thousands of miles apart, Rafael and El cannot wait to spend the rest of their lives together." %}"
+                        </div>
+                        <br>
+                        <br>
+                        <div class="video-title font-alt">
+                            <span class="icon-heart"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .row -->
+        </div>
+    </section>
+</div>
+{% endblock content %}
